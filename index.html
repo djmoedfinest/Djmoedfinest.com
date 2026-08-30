@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DJ Moe D Finest | DJ • Producer • Recording Artist</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        DJ Moe D Finest | DJ • Producer • Recording Artist
+    </title>
 
     <meta name="description"
           content="DJ Moe D Finest — DJ, Producer and Recording Artist for weddings, private events, parties and special occasions.">
 
-    <!-- Font Awesome -->
+    <!-- =========================
+         FONT AWESOME
+    ========================= -->
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+
     <style>
+
+        /* =========================
+           RESET
+        ========================= */
 
         * {
             margin: 0;
@@ -21,9 +35,11 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
+
 
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -32,10 +48,12 @@
             line-height: 1.6;
         }
 
+
         a {
             text-decoration: none;
             color: inherit;
         }
+
 
 
         /* =========================
@@ -46,15 +64,19 @@
             width: 100%;
             background: #090a08;
             border-bottom: 1px solid rgba(212, 175, 55, 0.55);
+
             position: sticky;
             top: 0;
             z-index: 999;
         }
 
+
         .header-inner {
             max-width: 1200px;
             margin: auto;
+
             height: 105px;
+
             padding: 0 30px;
 
             display: flex;
@@ -62,11 +84,13 @@
             justify-content: space-between;
         }
 
+
         .logo img {
             width: 190px;
             max-width: 100%;
             display: block;
         }
+
 
         nav {
             display: flex;
@@ -74,23 +98,32 @@
             gap: 28px;
         }
 
+
         nav a {
             color: #ffffff;
+
             font-size: 13px;
             font-weight: bold;
+
             text-transform: uppercase;
+
             transition: 0.3s;
         }
+
 
         nav a:hover {
             color: #f4d03f;
         }
 
+
         .book-button {
             color: #f4d03f !important;
+
             border-bottom: 2px solid #f4d03f;
+
             padding-bottom: 5px;
         }
+
 
 
         /* =========================
@@ -103,6 +136,7 @@
             margin-left: 5px;
         }
 
+
         .header-social a {
             width: 34px;
             height: 34px;
@@ -112,19 +146,24 @@
             justify-content: center;
 
             border: 1px solid #d4af37;
+
             border-radius: 50%;
 
             color: #f4d03f;
+
             font-size: 15px;
 
             transition: 0.3s;
         }
 
+
         .header-social a:hover {
             background: #f4d03f;
             color: #050607;
+
             transform: translateY(-3px);
         }
+
 
 
         /* =========================
@@ -133,10 +172,14 @@
 
         .menu-toggle {
             display: none;
+
             color: #f4d03f;
+
             font-size: 32px;
+
             cursor: pointer;
         }
+
 
 
         /* =========================
@@ -145,6 +188,7 @@
 
         .hero {
             min-height: 720px;
+
             display: flex;
             align-items: center;
 
@@ -163,68 +207,103 @@
             border-bottom: 1px solid rgba(212,175,55,0.35);
         }
 
+
         .hero-content {
             width: 90%;
             max-width: 1200px;
+
             margin: auto;
+
             text-align: center;
         }
 
+
         .hero-small {
             color: #f4d03f;
+
             font-size: 14px;
             font-weight: bold;
+
             letter-spacing: 4px;
+
             text-transform: uppercase;
+
             margin-bottom: 18px;
         }
 
+
         .hero h1 {
             font-size: clamp(42px, 7vw, 82px);
+
             line-height: 1;
+
             font-weight: 900;
+
             text-transform: uppercase;
+
             margin-bottom: 25px;
         }
+
 
         .hero h1 span {
             color: #f4d03f;
         }
 
+
         .hero p {
             max-width: 720px;
+
             margin: auto;
+
             color: #c7c7c7;
+
             font-size: 18px;
         }
 
+
         .hero-buttons {
             margin-top: 35px;
+
             display: flex;
+
             justify-content: center;
+
             gap: 15px;
+
             flex-wrap: wrap;
         }
 
+
         .btn {
             display: inline-block;
+
             padding: 14px 27px;
+
             border: 1px solid #f4d03f;
+
             text-transform: uppercase;
+
             font-size: 13px;
+
             font-weight: bold;
+
             transition: 0.3s;
         }
+
 
         .btn-gold {
             background: #f4d03f;
             color: #050607;
         }
 
+
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(244,208,63,0.18);
+
+            box-shadow:
+                0 8px 25px rgba(244,208,63,0.18);
         }
+
 
 
         /* =========================
@@ -233,36 +312,52 @@
 
         section {
             padding: 90px 30px;
-            border-bottom: 1px solid rgba(212,175,55,0.25);
+
+            border-bottom:
+                1px solid rgba(212,175,55,0.25);
         }
+
 
         .container {
             max-width: 1200px;
+
             margin: auto;
         }
 
+
         .section-title {
             text-align: center;
+
             margin-bottom: 60px;
         }
 
+
         .section-title h2 {
             color: #f4d03f;
+
             font-size: 35px;
+
             text-transform: uppercase;
+
             letter-spacing: 3px;
         }
 
+
         .section-title .line {
             width: 90px;
+
             height: 2px;
+
             background: #f4d03f;
+
             margin: 15px auto;
         }
+
 
         .section-title p {
             color: #aaa;
         }
+
 
 
         /* =========================
@@ -271,40 +366,59 @@
 
         .about-grid {
             display: grid;
+
             grid-template-columns: 1fr 1fr;
+
             gap: 60px;
+
             align-items: center;
         }
 
+
         .about-image {
             text-align: center;
+
             margin-bottom: 20px;
         }
 
+
         .about-image img {
             width: 320px;
+
             max-width: 85%;
+
             height: auto;
+
             display: inline-block;
+
             border-radius: 12px;
         }
 
+
         .about-text h3 {
             color: #f4d03f;
+
             font-size: 32px;
+
             margin-bottom: 18px;
         }
+
 
         .about-text p {
             color: #bdbdbd;
+
             margin-bottom: 18px;
         }
 
+
         .tagline {
             color: #ffffff !important;
+
             font-size: 20px;
+
             font-weight: bold;
         }
+
 
 
         /* =========================
@@ -313,36 +427,52 @@
 
         .services-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 0;
         }
 
+
         .service {
             text-align: center;
+
             padding: 40px 30px;
-            border-right: 1px solid rgba(212,175,55,0.35);
+
+            border-right:
+                1px solid rgba(212,175,55,0.35);
         }
+
 
         .service:last-child {
             border-right: none;
         }
 
+
         .service i {
             color: #f4d03f;
+
             font-size: 42px;
+
             margin-bottom: 20px;
         }
 
+
         .service h3 {
             color: #f4d03f;
+
             text-transform: uppercase;
+
             margin-bottom: 15px;
         }
 
+
         .service p {
             color: #aaa;
+
             font-size: 15px;
         }
+
 
 
         /* =========================
@@ -351,42 +481,60 @@
 
         .music-box {
             max-width: 850px;
+
             margin: auto;
+
             text-align: center;
         }
 
+
         .music-box h3 {
             font-size: 30px;
+
             margin-bottom: 15px;
         }
 
+
         .music-box p {
             color: #aaa;
+
             margin-bottom: 30px;
         }
 
+
         .music-links {
             display: flex;
+
             justify-content: center;
+
             gap: 15px;
+
             flex-wrap: wrap;
         }
 
+
         .music-link {
             border: 1px solid #f4d03f;
+
             padding: 14px 22px;
+
             color: #f4d03f;
+
             transition: 0.3s;
         }
+
 
         .music-link i {
             margin-right: 8px;
         }
 
+
         .music-link:hover {
             background: #f4d03f;
+
             color: #050607;
         }
+
 
 
         /* =========================
@@ -395,35 +543,311 @@
 
         .gallery-grid {
             display: grid;
+
             grid-template-columns: repeat(4, 1fr);
+
             gap: 10px;
         }
 
+
         .gallery-item {
             height: 260px;
-            background: linear-gradient(135deg, #171717, #292929);
-            border: 1px solid rgba(212,175,55,0.35);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #171717,
+                    #292929
+                );
+
+            border:
+                1px solid rgba(212,175,55,0.35);
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             overflow: hidden;
+
             cursor: pointer;
+
+            position: relative;
         }
+
+
+        .gallery-item::after {
+            content: "\f00e";
+
+            font-family:
+                "Font Awesome 6 Free";
+
+            font-weight: 900;
+
+            position: absolute;
+
+            top: 15px;
+            right: 15px;
+
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+                rgba(0,0,0,0.70);
+
+            border:
+                1px solid rgba(244,208,63,0.8);
+
+            border-radius: 50%;
+
+            color: #f4d03f;
+
+            font-size: 14px;
+
+            opacity: 0;
+
+            transform: scale(0.8);
+
+            transition: 0.3s;
+
+            z-index: 2;
+        }
+
+
+        .gallery-item:hover::after {
+            opacity: 1;
+
+            transform: scale(1);
+        }
+
 
         .gallery-item img {
             width: 100%;
+
             height: 100%;
+
             object-fit: cover;
+
             display: block;
 
-            transition: transform 0.5s ease;
+            transition:
+                transform 0.5s ease,
+                filter 0.3s ease;
         }
+
 
         .gallery-item:hover img {
             transform: scale(1.06);
+
+            filter: brightness(0.78);
         }
+
+
+
+        /* =========================
+           GALLERY LIGHTBOX / SLIDER
+        ========================= */
+
+        .gallery-lightbox {
+            position: fixed;
+
+            inset: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background:
+                rgba(0,0,0,0.94);
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            z-index: 9999;
+
+            padding: 30px;
+        }
+
+
+        .gallery-lightbox.active {
+            display: flex;
+        }
+
+
+        .lightbox-content {
+            position: relative;
+
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .lightbox-image {
+            max-width: 85%;
+
+            max-height: 82vh;
+
+            object-fit: contain;
+
+            border-radius: 5px;
+
+            box-shadow:
+                0 20px 80px rgba(0,0,0,0.7);
+
+            user-select: none;
+
+            -webkit-user-drag: none;
+        }
+
+
+        /* CLOSE BUTTON */
+
+        .lightbox-close {
+            position: absolute;
+
+            top: 15px;
+            right: 20px;
+
+            width: 48px;
+            height: 48px;
+
+            border: 1px solid #f4d03f;
+
+            border-radius: 50%;
+
+            background: rgba(0,0,0,0.65);
+
+            color: #f4d03f;
+
+            font-size: 22px;
+
+            cursor: pointer;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            transition: 0.3s;
+
+            z-index: 5;
+        }
+
+
+        .lightbox-close:hover {
+            background: #f4d03f;
+
+            color: #050607;
+
+            transform: rotate(90deg);
+        }
+
+
+        /* PREVIOUS / NEXT */
+
+        .lightbox-prev,
+        .lightbox-next {
+            position: absolute;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            width: 55px;
+
+            height: 55px;
+
+            border: 1px solid #f4d03f;
+
+            border-radius: 50%;
+
+            background: rgba(0,0,0,0.65);
+
+            color: #f4d03f;
+
+            font-size: 22px;
+
+            cursor: pointer;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            transition: 0.3s;
+
+            z-index: 5;
+        }
+
+
+        .lightbox-prev {
+            left: 25px;
+        }
+
+
+        .lightbox-next {
+            right: 25px;
+        }
+
+
+        .lightbox-prev:hover,
+        .lightbox-next:hover {
+            background: #f4d03f;
+
+            color: #050607;
+
+            transform:
+                translateY(-50%) scale(1.08);
+        }
+
+
+        /* COUNTER */
+
+        .lightbox-counter {
+            position: absolute;
+
+            bottom: 25px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            color: #ffffff;
+
+            font-size: 14px;
+
+            letter-spacing: 2px;
+
+            background:
+                rgba(0,0,0,0.65);
+
+            padding: 8px 18px;
+
+            border:
+                1px solid rgba(244,208,63,0.5);
+
+            border-radius: 30px;
+
+            z-index: 5;
+        }
+
 
 
         /* =========================
@@ -432,19 +856,26 @@
 
         .events-box {
             text-align: center;
+
             max-width: 800px;
+
             margin: auto;
         }
 
+
         .events-box h3 {
             font-size: 32px;
+
             margin-bottom: 20px;
         }
 
+
         .events-box p {
             color: #aaa;
+
             margin-bottom: 30px;
         }
+
 
 
         /* =========================
@@ -462,21 +893,29 @@
                 );
         }
 
+
         .booking h2 {
             font-size: clamp(38px, 6vw, 65px);
+
             text-transform: uppercase;
+
             margin-bottom: 20px;
         }
+
 
         .booking h2 span {
             color: #f4d03f;
         }
 
+
         .booking p {
             max-width: 700px;
+
             margin: 0 auto 30px;
+
             color: #aaa;
         }
+
 
 
         /* =========================
@@ -485,51 +924,74 @@
 
         footer {
             background: #080907;
+
             padding: 70px 30px 25px;
         }
 
+
         .footer-grid {
             max-width: 1200px;
+
             margin: auto;
 
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+
+            grid-template-columns:
+                2fr 1fr 1fr 1.5fr;
+
             gap: 50px;
         }
 
+
         .footer-logo img {
             width: 220px;
+
             margin-bottom: 20px;
         }
+
 
         .footer-column p {
             color: #999;
+
             max-width: 350px;
         }
 
+
         .footer-column h3 {
             color: #f4d03f;
+
             text-transform: uppercase;
+
             font-size: 16px;
+
             letter-spacing: 2px;
+
             margin-bottom: 20px;
         }
 
+
         .footer-links {
             display: flex;
+
             flex-direction: column;
+
             gap: 10px;
         }
 
+
         .footer-links a {
             color: #aaa;
+
             transition: 0.3s;
         }
 
+
         .footer-links a:hover {
             color: #f4d03f;
+
             padding-left: 5px;
         }
+
 
 
         /* =========================
@@ -538,57 +1000,81 @@
 
         .social-icons {
             display: flex;
+
             gap: 12px;
+
             flex-wrap: wrap;
+
             margin-top: 20px;
         }
 
+
         .social-icons a {
             width: 45px;
+
             height: 45px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
             border: 1px solid #d4af37;
+
             border-radius: 50%;
 
             color: #f4d03f;
+
             font-size: 19px;
 
             transition: all 0.3s ease;
         }
 
+
         .social-icons a:hover {
             background: #f4d03f;
+
             color: #050607;
+
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(244,208,63,0.2);
+
+            box-shadow:
+                0 8px 20px rgba(244,208,63,0.2);
         }
+
 
         .social-icons .tiktok:hover {
             background: #ffffff;
+
             color: #050607;
         }
 
+
         .social-icons .spotify:hover {
             background: #1DB954;
+
             color: #ffffff;
         }
+
 
         .social-icons .facebook:hover {
             background: #1877F2;
+
             color: #ffffff;
         }
+
 
         .social-icons .instagram:hover {
             background: #E4405F;
+
             color: #ffffff;
         }
 
+
         .social-icons .apple:hover {
             background: #ffffff;
+
             color: #050607;
         }
 
@@ -597,30 +1083,42 @@
             color: #aaa;
         }
 
+
         .contact-info a {
             display: block;
+
             margin-bottom: 10px;
+
             transition: 0.3s;
         }
+
 
         .contact-info a:hover {
             color: #f4d03f;
         }
 
+
         .copyright {
             max-width: 1200px;
+
             margin: 50px auto 0;
+
             padding-top: 25px;
 
-            border-top: 1px solid rgba(212,175,55,0.2);
+            border-top:
+                1px solid rgba(212,175,55,0.2);
 
             display: flex;
+
             justify-content: space-between;
+
             gap: 20px;
 
             color: #666;
+
             font-size: 12px;
         }
+
 
 
         /* =========================
@@ -633,53 +1131,79 @@
                 height: 90px;
             }
 
+
             .logo img {
                 width: 155px;
             }
+
 
             nav {
                 display: none;
             }
 
+
             .menu-toggle {
                 display: block;
             }
+
 
             .hero {
                 min-height: 600px;
             }
 
+
             .about-grid {
                 grid-template-columns: 1fr;
+
                 text-align: center;
             }
+
 
             .services-grid {
                 grid-template-columns: 1fr;
             }
 
+
             .service {
                 border-right: none;
-                border-bottom: 1px solid rgba(212,175,55,0.3);
+
+                border-bottom:
+                    1px solid rgba(212,175,55,0.3);
             }
+
 
             .service:last-child {
                 border-bottom: none;
             }
 
+
             .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
 
+
             .footer-grid {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns:
+                    1fr 1fr;
             }
+
 
             .about-image img {
                 width: 280px;
+
                 max-width: 80%;
             }
+
+
+            .lightbox-image {
+                max-width: 82%;
+
+                max-height: 78vh;
+            }
+
         }
+
 
 
         /* =========================
@@ -692,92 +1216,195 @@
                 padding: 65px 20px;
             }
 
+
             .header-inner {
                 padding: 0 20px;
             }
+
 
             .logo img {
                 width: 140px;
             }
 
+
             .hero h1 {
                 font-size: 43px;
             }
+
 
             .hero p {
                 font-size: 16px;
             }
 
+
             .section-title {
                 margin-bottom: 40px;
             }
 
+
             .section-title h2 {
                 font-size: 28px;
             }
+
 
             .section-title p {
                 font-size: 13px;
             }
 
 
+
             /* ABOUT */
 
             .about-image {
                 width: 100%;
+
                 text-align: center;
+
                 margin-bottom: 30px;
             }
 
+
             .about-image img {
                 width: 260px;
+
                 max-width: 80%;
+
                 height: auto;
+
                 display: inline-block;
+
                 border-radius: 12px;
             }
 
+
             .about-text h3 {
                 font-size: 26px;
+
                 margin-bottom: 15px;
             }
+
 
             .tagline {
                 font-size: 16px;
             }
+
 
             .about-text p {
                 font-size: 15px;
             }
 
 
+
             /* GALLERY */
 
             .gallery-grid {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns:
+                    1fr 1fr;
+
                 gap: 8px;
             }
+
 
             .gallery-item {
                 height: 170px;
             }
 
 
+            .gallery-item::after {
+                width: 32px;
+
+                height: 32px;
+
+                top: 8px;
+
+                right: 8px;
+
+                font-size: 11px;
+
+                opacity: 1;
+
+                transform: scale(1);
+            }
+
+
+
+            /* LIGHTBOX MOBILE */
+
+            .gallery-lightbox {
+                padding: 15px;
+            }
+
+
+            .lightbox-image {
+                max-width: 92%;
+
+                max-height: 70vh;
+            }
+
+
+            .lightbox-prev,
+            .lightbox-next {
+                width: 44px;
+
+                height: 44px;
+
+                font-size: 17px;
+            }
+
+
+            .lightbox-prev {
+                left: 8px;
+            }
+
+
+            .lightbox-next {
+                right: 8px;
+            }
+
+
+            .lightbox-close {
+                top: 8px;
+
+                right: 8px;
+
+                width: 42px;
+
+                height: 42px;
+
+                font-size: 18px;
+            }
+
+
+            .lightbox-counter {
+                bottom: 15px;
+
+                font-size: 12px;
+
+                padding: 6px 14px;
+            }
+
+
+
             /* FOOTER */
 
             .footer-grid {
                 grid-template-columns: 1fr;
+
                 gap: 40px;
             }
 
+
             .copyright {
                 flex-direction: column;
+
                 text-align: center;
             }
+
 
             .social-icons {
                 justify-content: flex-start;
             }
+
 
 
             /* BOOKING */
@@ -789,10 +1416,12 @@
         }
 
     </style>
+
 </head>
 
 
 <body>
+
 
 
 <!-- =========================
@@ -803,7 +1432,9 @@
 
     <div class="header-inner">
 
-        <a href="#home" class="logo">
+
+        <a href="#home"
+           class="logo">
 
             <img src="dj moe.png"
                  alt="DJ Moe D Finest">
@@ -813,22 +1444,44 @@
 
         <nav>
 
-            <a href="#home">Home</a>
 
-            <a href="#about">About</a>
+            <a href="#home">
+                Home
+            </a>
 
-            <a href="#music">Music</a>
 
-            <a href="#services">Services</a>
+            <a href="#about">
+                About
+            </a>
 
-            <a href="#gallery">Gallery</a>
 
-            <a href="#events">Events</a>
+            <a href="#music">
+                Music
+            </a>
+
+
+            <a href="#services">
+                Services
+            </a>
+
+
+            <a href="#gallery">
+                Gallery
+            </a>
+
+
+            <a href="#events">
+                Events
+            </a>
+
 
             <a href="#booking"
                class="book-button">
+
                 Book Now
+
             </a>
+
 
 
             <!-- TIKTOK -->
@@ -915,18 +1568,27 @@
      HOME
 ========================= -->
 
-<section class="hero" id="home">
+<section class="hero"
+         id="home">
 
     <div class="hero-content">
 
+
         <div class="hero-small">
+
             DJ • Producer • Recording Artist
+
         </div>
 
 
         <h1>
+
             Your Event.<br>
-            <span>Your Soundtrack.</span>
+
+            <span>
+                Your Soundtrack.
+            </span>
+
         </h1>
 
 
@@ -941,6 +1603,7 @@
 
 
         <div class="hero-buttons">
+
 
             <a href="#booking"
                class="btn btn-gold">
@@ -973,9 +1636,12 @@
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>About</h2>
+            <h2>
+                About
+            </h2>
 
             <div class="line"></div>
 
@@ -989,8 +1655,6 @@
         <div class="about-grid">
 
 
-            <!-- ABOUT PHOTO -->
-
             <div class="about-image">
 
                 <img src="about-photo.PNG"
@@ -998,8 +1662,6 @@
 
             </div>
 
-
-            <!-- ABOUT TEXT -->
 
             <div class="about-text">
 
@@ -1055,9 +1717,12 @@
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Music</h2>
+            <h2>
+                Music
+            </h2>
 
             <div class="line"></div>
 
@@ -1086,8 +1751,6 @@
             <div class="music-links">
 
 
-                <!-- SPOTIFY -->
-
                 <a class="music-link"
                    href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
                    target="_blank"
@@ -1099,8 +1762,6 @@
 
                 </a>
 
-
-                <!-- APPLE MUSIC -->
 
                 <a class="music-link"
                    href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
@@ -1131,6 +1792,7 @@
 
     <div class="container">
 
+
         <div class="section-title">
 
             <h2>
@@ -1144,8 +1806,6 @@
 
         <div class="services-grid">
 
-
-            <!-- WEDDINGS -->
 
             <div class="service">
 
@@ -1167,8 +1827,6 @@
             </div>
 
 
-            <!-- PRIVATE EVENTS -->
-
             <div class="service">
 
                 <i class="fa-solid fa-users"></i>
@@ -1187,8 +1845,6 @@
 
             </div>
 
-
-            <!-- PARTIES -->
 
             <div class="service">
 
@@ -1240,14 +1896,14 @@
         </div>
 
 
-        <!-- REAL GALLERY PHOTOS -->
 
         <div class="gallery-grid">
 
 
-            <!-- GALLERY PHOTO 1 -->
+            <!-- PHOTO 1 -->
 
-            <div class="gallery-item">
+            <div class="gallery-item"
+                 onclick="openGallery(0)">
 
                 <img src="gallery-1.PNG"
                      alt="DJ Moe D Finest Gallery Photo 1"
@@ -1256,9 +1912,10 @@
             </div>
 
 
-            <!-- GALLERY PHOTO 2 -->
+            <!-- PHOTO 2 -->
 
-            <div class="gallery-item">
+            <div class="gallery-item"
+                 onclick="openGallery(1)">
 
                 <img src="gallery-2.PNG"
                      alt="DJ Moe D Finest Gallery Photo 2"
@@ -1267,31 +1924,34 @@
             </div>
 
 
-            <!-- GALLERY PHOTO 3 -->
+            <!-- PHOTO 3 -->
 
-            <div class="gallery-item">
+            <div class="gallery-item"
+                 onclick="openGallery(2)">
 
-                <img src="gallery-3.heic"
+                <img src="gallery-3.jpg"
                      alt="DJ Moe D Finest Gallery Photo 3"
                      loading="lazy">
 
             </div>
 
 
-            <!-- GALLERY PHOTO 4 -->
+            <!-- PHOTO 4 -->
 
-            <div class="gallery-item">
+            <div class="gallery-item"
+                 onclick="openGallery(3)">
 
-                <img src="gallery-4.heic"
+                <img src="gallery-4.jpg"
                      alt="DJ Moe D Finest Gallery Photo 4"
                      loading="lazy">
 
             </div>
 
 
-            <!-- GALLERY PHOTO 5 -->
+            <!-- PHOTO 5 -->
 
-            <div class="gallery-item">
+            <div class="gallery-item"
+                 onclick="openGallery(4)">
 
                 <img src="gallery-5.jpg"
                      alt="DJ Moe D Finest Gallery Photo 5"
@@ -1305,6 +1965,78 @@
     </div>
 
 </section>
+
+
+
+<!-- =========================
+     GALLERY LIGHTBOX
+========================= -->
+
+<div class="gallery-lightbox"
+     id="galleryLightbox">
+
+
+    <div class="lightbox-content"
+         id="lightboxContent">
+
+
+        <!-- CLOSE -->
+
+        <button class="lightbox-close"
+                onclick="closeGallery()"
+                aria-label="Close gallery">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+
+        <!-- PREVIOUS -->
+
+        <button class="lightbox-prev"
+                onclick="previousImage()"
+                aria-label="Previous image">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+
+        <!-- IMAGE -->
+
+        <img class="lightbox-image"
+             id="lightboxImage"
+             src=""
+             alt="DJ Moe D Finest Gallery">
+
+
+        <!-- NEXT -->
+
+        <button class="lightbox-next"
+                onclick="nextImage()"
+                aria-label="Next image">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+
+
+        <!-- COUNTER -->
+
+        <div class="lightbox-counter"
+             id="lightboxCounter">
+
+            1 / 5
+
+        </div>
+
+
+    </div>
+
+</div>
 
 
 
@@ -1354,7 +2086,6 @@
 
             </a>
 
-
         </div>
 
     </div>
@@ -1394,8 +2125,6 @@
         </p>
 
 
-        <!-- EMAIL -->
-
         <a href="mailto:djmoe20@yahoo.com"
            class="btn btn-gold">
 
@@ -1404,8 +2133,6 @@
         </a>
 
 
-        <!-- PHONE -->
-
         <a href="tel:+4917661209239"
            class="btn"
            style="margin-left:10px;">
@@ -1413,7 +2140,6 @@
             Call Now
 
         </a>
-
 
     </div>
 
@@ -1457,12 +2183,8 @@
             </p>
 
 
-            <!-- SOCIAL MEDIA -->
-
             <div class="social-icons">
 
-
-                <!-- TIKTOK -->
 
                 <a class="tiktok"
                    href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
@@ -1475,8 +2197,6 @@
                 </a>
 
 
-                <!-- FACEBOOK -->
-
                 <a class="facebook"
                    href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
                    target="_blank"
@@ -1487,8 +2207,6 @@
 
                 </a>
 
-
-                <!-- INSTAGRAM -->
 
                 <a class="instagram"
                    href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
@@ -1501,8 +2219,6 @@
                 </a>
 
 
-                <!-- SPOTIFY -->
-
                 <a class="spotify"
                    href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
                    target="_blank"
@@ -1514,8 +2230,6 @@
                 </a>
 
 
-                <!-- APPLE MUSIC -->
-
                 <a class="apple"
                    href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
                    target="_blank"
@@ -1525,7 +2239,6 @@
                     <i class="fa-brands fa-apple"></i>
 
                 </a>
-
 
             </div>
 
@@ -1537,7 +2250,6 @@
 
         <div class="footer-column">
 
-
             <h3>
                 Quick Links
             </h3>
@@ -1545,19 +2257,33 @@
 
             <div class="footer-links">
 
-                <a href="#home">Home</a>
+                <a href="#home">
+                    Home
+                </a>
 
-                <a href="#about">About</a>
+                <a href="#about">
+                    About
+                </a>
 
-                <a href="#music">Music</a>
+                <a href="#music">
+                    Music
+                </a>
 
-                <a href="#services">Services</a>
+                <a href="#services">
+                    Services
+                </a>
 
-                <a href="#gallery">Gallery</a>
+                <a href="#gallery">
+                    Gallery
+                </a>
 
-                <a href="#events">Events</a>
+                <a href="#events">
+                    Events
+                </a>
 
-                <a href="#booking">Book Now</a>
+                <a href="#booking">
+                    Book Now
+                </a>
 
             </div>
 
@@ -1568,7 +2294,6 @@
         <!-- FOLLOW -->
 
         <div class="footer-column">
-
 
             <h3>
                 Follow Me
@@ -1622,7 +2347,6 @@
 
                 </a>
 
-
             </div>
 
         </div>
@@ -1659,7 +2383,6 @@
 
                 </a>
 
-
             </div>
 
 
@@ -1673,9 +2396,7 @@
 
             </a>
 
-
         </div>
-
 
     </div>
 
@@ -1699,19 +2420,22 @@
 
         </div>
 
-
     </div>
-
 
 </footer>
 
 
 
 <!-- =========================
-     MOBILE MENU SCRIPT
+     JAVASCRIPT
 ========================= -->
 
 <script>
+
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
 
     const menuToggle =
         document.querySelector('.menu-toggle');
@@ -1720,38 +2444,318 @@
         document.querySelector('nav');
 
 
-    menuToggle.addEventListener('click', function () {
+    menuToggle.addEventListener(
+        'click',
+        function () {
 
-        if (nav.style.display === 'flex') {
+            if (nav.style.display === 'flex') {
 
-            nav.style.display = 'none';
+                nav.style.display = 'none';
 
-        } else {
+            } else {
 
-            nav.style.display = 'flex';
+                nav.style.display = 'flex';
 
-            nav.style.position = 'absolute';
+                nav.style.position = 'absolute';
 
-            nav.style.top = '90px';
+                nav.style.top = '90px';
 
-            nav.style.left = '0';
+                nav.style.left = '0';
 
-            nav.style.right = '0';
+                nav.style.right = '0';
 
-            nav.style.background = '#090a08';
+                nav.style.background = '#090a08';
 
-            nav.style.padding = '25px';
+                nav.style.padding = '25px';
 
-            nav.style.flexDirection = 'column';
+                nav.style.flexDirection = 'column';
 
-            nav.style.alignItems = 'center';
+                nav.style.alignItems = 'center';
+
+            }
+
+        }
+    );
+
+
+
+    /* =========================
+       GALLERY SLIDER
+    ========================= */
+
+    const galleryImages = [
+
+        "gallery-1.PNG",
+
+        "gallery-2.PNG",
+
+        "gallery-3.jpg",
+
+        "gallery-4.jpg",
+
+        "gallery-5.jpg"
+
+    ];
+
+
+    let currentImage = 0;
+
+
+    const lightbox =
+        document.getElementById(
+            "galleryLightbox"
+        );
+
+
+    const lightboxImage =
+        document.getElementById(
+            "lightboxImage"
+        );
+
+
+    const lightboxCounter =
+        document.getElementById(
+            "lightboxCounter"
+        );
+
+
+
+    /* =========================
+       OPEN GALLERY
+    ========================= */
+
+    function openGallery(index) {
+
+        currentImage = index;
+
+        updateGallery();
+
+        lightbox.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+
+    }
+
+
+
+    /* =========================
+       CLOSE GALLERY
+    ========================= */
+
+    function closeGallery() {
+
+        lightbox.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
+
+
+    /* =========================
+       UPDATE IMAGE
+    ========================= */
+
+    function updateGallery() {
+
+        lightboxImage.src =
+            galleryImages[currentImage];
+
+        lightboxImage.alt =
+            "DJ Moe D Finest Gallery Photo " +
+            (currentImage + 1);
+
+        lightboxCounter.textContent =
+            (currentImage + 1) +
+            " / " +
+            galleryImages.length;
+
+    }
+
+
+
+    /* =========================
+       NEXT IMAGE
+    ========================= */
+
+    function nextImage() {
+
+        currentImage++;
+
+        if (
+            currentImage >=
+            galleryImages.length
+        ) {
+
+            currentImage = 0;
 
         }
 
-    });
+        updateGallery();
+
+    }
+
+
+
+    /* =========================
+       PREVIOUS IMAGE
+    ========================= */
+
+    function previousImage() {
+
+        currentImage--;
+
+        if (currentImage < 0) {
+
+            currentImage =
+                galleryImages.length - 1;
+
+        }
+
+        updateGallery();
+
+    }
+
+
+
+    /* =========================
+       KEYBOARD CONTROLS
+    ========================= */
+
+    document.addEventListener(
+        "keydown",
+        function(event) {
+
+            if (
+                !lightbox.classList.contains(
+                    "active"
+                )
+            ) {
+
+                return;
+
+            }
+
+
+            if (
+                event.key === "ArrowRight"
+            ) {
+
+                nextImage();
+
+            }
+
+
+            if (
+                event.key === "ArrowLeft"
+            ) {
+
+                previousImage();
+
+            }
+
+
+            if (
+                event.key === "Escape"
+            ) {
+
+                closeGallery();
+
+            }
+
+        }
+    );
+
+
+
+    /* =========================
+       CLOSE WHEN CLICKING
+       OUTSIDE IMAGE
+    ========================= */
+
+    lightbox.addEventListener(
+        "click",
+        function(event) {
+
+            if (
+                event.target === lightbox
+            ) {
+
+                closeGallery();
+
+            }
+
+        }
+    );
+
+
+
+    /* =========================
+       MOBILE SWIPE
+    ========================= */
+
+    let touchStartX = 0;
+
+    let touchEndX = 0;
+
+
+    lightboxImage.addEventListener(
+        "touchstart",
+        function(event) {
+
+            touchStartX =
+                event.changedTouches[0].screenX;
+
+        },
+        { passive: true }
+    );
+
+
+    lightboxImage.addEventListener(
+        "touchend",
+        function(event) {
+
+            touchEndX =
+                event.changedTouches[0].screenX;
+
+            handleSwipe();
+
+        },
+        { passive: true }
+    );
+
+
+    function handleSwipe() {
+
+        const swipeDistance =
+            touchEndX - touchStartX;
+
+
+        if (
+            Math.abs(swipeDistance) < 50
+        ) {
+
+            return;
+
+        }
+
+
+        if (swipeDistance < 0) {
+
+            nextImage();
+
+        } else {
+
+            previousImage();
+
+        }
+
+    }
+
 
 </script>
 
 
 </body>
+
 </html>
