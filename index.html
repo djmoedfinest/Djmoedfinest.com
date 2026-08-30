@@ -3,20 +3,33 @@
 
 <head>
 
+    <!-- =========================
+         BASIC SEO
+    ========================= -->
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#050607">
 
     <title>
         DJ Moe D Finest | DJ • Producer • Recording Artist
     </title>
 
     <meta name="description"
-          content="DJ Moe D Finest — DJ, Producer and Recording Artist for weddings, private events, parties and special occasions.">
+          content="DJ Moe D Finest is a DJ, Producer and Recording Artist providing unforgettable music and entertainment for weddings, private events, parties, nightlife and special occasions.">
+
+    <meta name="robots"
+          content="index, follow, max-image-preview:large">
+
+    <link rel="canonical"
+          href="https://djmoedfinest.com/">
 
     <!-- =========================
-         DJ MOE D FINEST FAVICON
+         FAVICON
          FILE: favicon-djmoe.PNG
     ========================= -->
 
@@ -32,11 +45,83 @@
           href="favicon-djmoe.PNG">
 
     <!-- =========================
+         OPEN GRAPH
+         FOR FACEBOOK / WHATSAPP / SOCIAL SHARING
+    ========================= -->
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:url"
+          content="https://djmoedfinest.com/">
+
+    <meta property="og:title"
+          content="DJ Moe D Finest | DJ • Producer • Recording Artist">
+
+    <meta property="og:description"
+          content="DJ Moe D Finest — DJ, Producer and Recording Artist for weddings, private events, parties, nightlife and special occasions.">
+
+    <meta property="og:image"
+          content="https://djmoedfinest.com/about-photo.PNG">
+
+    <meta property="og:image:alt"
+          content="DJ Moe D Finest">
+
+    <meta property="og:site_name"
+          content="DJ Moe D Finest">
+
+    <!-- =========================
+         TWITTER / X
+    ========================= -->
+
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="DJ Moe D Finest | DJ • Producer • Recording Artist">
+
+    <meta name="twitter:description"
+          content="DJ Moe D Finest — DJ, Producer and Recording Artist for weddings, private events, parties and special occasions.">
+
+    <meta name="twitter:image"
+          content="https://djmoedfinest.com/about-photo.PNG">
+
+    <!-- =========================
          FONT AWESOME
     ========================= -->
 
+    <link rel="preconnect"
+          href="https://cdnjs.cloudflare.com">
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- =========================
+         STRUCTURED DATA
+         GOOGLE / SEARCH ENGINES
+    ========================= -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "DJ Moe D Finest",
+        "alternateName": "DJ Moe D",
+        "url": "https://djmoedfinest.com/",
+        "image": "https://djmoedfinest.com/about-photo.PNG",
+        "jobTitle": "DJ, Producer and Recording Artist",
+        "description": "DJ Moe D Finest is a DJ, Producer and Recording Artist providing music and entertainment for weddings, private events, parties, nightlife and special occasions.",
+        "sameAs": [
+            "https://www.tiktok.com/@djmoedfinest",
+            "https://www.facebook.com/share/19kagyoXPD/",
+            "https://www.instagram.com/djmoedfinst",
+            "https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U",
+            "https://music.apple.com/de/artist/dj-moe-d-finest/1801768747"
+        ]
+    }
+
+    </script>
 
     <style>
 
@@ -61,9 +146,17 @@
             line-height: 1.6;
         }
 
+        body.menu-open {
+            overflow: hidden;
+        }
+
         a {
             text-decoration: none;
             color: inherit;
+        }
+
+        img {
+            max-width: 100%;
         }
 
         /* =========================
@@ -84,7 +177,7 @@
             max-width: 1200px;
             margin: auto;
 
-            height: 105px;
+            min-height: 105px;
 
             padding: 0 30px;
 
@@ -98,6 +191,10 @@
             max-width: 100%;
             display: block;
         }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         nav {
             display: flex;
@@ -165,7 +262,7 @@
         }
 
         /* =========================
-           MOBILE MENU
+           MOBILE MENU BUTTON
         ========================= */
 
         .menu-toggle {
@@ -173,9 +270,13 @@
 
             color: #f4d03f;
 
-            font-size: 32px;
+            font-size: 30px;
 
             cursor: pointer;
+
+            background: none;
+
+            border: none;
         }
 
         /* =========================
@@ -365,9 +466,18 @@
 
             height: auto;
 
+            aspect-ratio: 1 / 1;
+
+            object-fit: cover;
+
             display: inline-block;
 
             border-radius: 12px;
+
+            border: 1px solid rgba(244,208,63,0.45);
+
+            box-shadow:
+                0 20px 50px rgba(0,0,0,0.5);
         }
 
         .about-text h3 {
@@ -390,53 +500,6 @@
             font-size: 20px;
 
             font-weight: bold;
-        }
-
-        /* =========================
-           SERVICES
-        ========================= */
-
-        .services-grid {
-            display: grid;
-
-            grid-template-columns: repeat(3, 1fr);
-
-            gap: 0;
-        }
-
-        .service {
-            text-align: center;
-
-            padding: 40px 30px;
-
-            border-right:
-                1px solid rgba(212,175,55,0.35);
-        }
-
-        .service:last-child {
-            border-right: none;
-        }
-
-        .service i {
-            color: #f4d03f;
-
-            font-size: 42px;
-
-            margin-bottom: 20px;
-        }
-
-        .service h3 {
-            color: #f4d03f;
-
-            text-transform: uppercase;
-
-            margin-bottom: 15px;
-        }
-
-        .service p {
-            color: #aaa;
-
-            font-size: 15px;
         }
 
         /* =========================
@@ -491,6 +554,53 @@
             background: #f4d03f;
 
             color: #050607;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 0;
+        }
+
+        .service {
+            text-align: center;
+
+            padding: 40px 30px;
+
+            border-right:
+                1px solid rgba(212,175,55,0.35);
+        }
+
+        .service:last-child {
+            border-right: none;
+        }
+
+        .service i {
+            color: #f4d03f;
+
+            font-size: 42px;
+
+            margin-bottom: 20px;
+        }
+
+        .service h3 {
+            color: #f4d03f;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+        }
+
+        .service p {
+            color: #aaa;
+
+            font-size: 15px;
         }
 
         /* =========================
@@ -601,7 +711,7 @@
         }
 
         /* =========================
-           GALLERY LIGHTBOX / SLIDER
+           GALLERY LIGHTBOX
         ========================= */
 
         .gallery-lightbox {
@@ -660,7 +770,7 @@
             -webkit-user-drag: none;
         }
 
-        /* CLOSE BUTTON */
+        /* CLOSE */
 
         .lightbox-close {
             position: absolute;
@@ -1034,7 +1144,7 @@
         @media (max-width: 900px) {
 
             .header-inner {
-                height: 90px;
+                min-height: 90px;
             }
 
             .logo img {
@@ -1047,6 +1157,37 @@
 
             .menu-toggle {
                 display: block;
+            }
+
+            nav.mobile-active {
+                display: flex;
+
+                position: absolute;
+
+                top: 90px;
+
+                left: 0;
+
+                right: 0;
+
+                background: #090a08;
+
+                padding: 25px;
+
+                flex-direction: column;
+
+                align-items: center;
+
+                gap: 22px;
+
+                border-bottom:
+                    1px solid rgba(212,175,55,0.45);
+            }
+
+            .header-social {
+                margin-left: 0;
+
+                margin-top: 5px;
             }
 
             .hero {
@@ -1099,7 +1240,7 @@
         }
 
         /* =========================
-           SMALL MOBILE
+           MOBILE
         ========================= */
 
         @media (max-width: 600px) {
@@ -1116,12 +1257,22 @@
                 width: 140px;
             }
 
+            .hero {
+                min-height: 620px;
+            }
+
             .hero h1 {
                 font-size: 43px;
             }
 
             .hero p {
                 font-size: 16px;
+            }
+
+            .hero-small {
+                font-size: 11px;
+
+                letter-spacing: 2px;
             }
 
             .section-title {
@@ -1152,6 +1303,8 @@
                 max-width: 80%;
 
                 height: auto;
+
+                aspect-ratio: 1 / 1;
 
                 display: inline-block;
 
@@ -1201,7 +1354,7 @@
                 transform: scale(1);
             }
 
-            /* LIGHTBOX MOBILE */
+            /* LIGHTBOX */
 
             .gallery-lightbox {
                 padding: 15px;
@@ -1280,7 +1433,9 @@
 
 </head>
 
+
 <body>
+
 
 <!-- =========================
      HEADER
@@ -1291,14 +1446,16 @@
     <div class="header-inner">
 
         <a href="#home"
-           class="logo">
+           class="logo"
+           aria-label="DJ Moe D Finest Home">
 
             <img src="dj moe.png"
-                 alt="DJ Moe D Finest">
+                 alt="DJ Moe D Finest logo">
 
         </a>
 
-        <nav>
+
+        <nav id="mainNav">
 
             <a href="#home">
                 Home
@@ -1326,53 +1483,56 @@
 
             <a href="#booking"
                class="book-button">
-
                 Book Now
-
             </a>
+
 
             <div class="header-social">
 
-                <a href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
+                <a href="https://www.tiktok.com/@djmoedfinest"
                    target="_blank"
                    rel="noopener noreferrer"
-                   aria-label="TikTok">
+                   aria-label="DJ Moe D Finest on TikTok">
 
                     <i class="fa-brands fa-tiktok"></i>
 
                 </a>
 
+
                 <a href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
                    target="_blank"
                    rel="noopener noreferrer"
-                   aria-label="Facebook">
+                   aria-label="DJ Moe D Finest on Facebook">
 
                     <i class="fa-brands fa-facebook-f"></i>
 
                 </a>
 
-                <a href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
+
+                <a href="https://www.instagram.com/djmoedfinst"
                    target="_blank"
                    rel="noopener noreferrer"
-                   aria-label="Instagram">
+                   aria-label="DJ Moe D Finest on Instagram">
 
                     <i class="fa-brands fa-instagram"></i>
 
                 </a>
 
-                <a href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
+
+                <a href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U"
                    target="_blank"
                    rel="noopener noreferrer"
-                   aria-label="Spotify">
+                   aria-label="DJ Moe D Finest on Spotify">
 
                     <i class="fa-brands fa-spotify"></i>
 
                 </a>
 
+
                 <a href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
                    target="_blank"
                    rel="noopener noreferrer"
-                   aria-label="Apple Music">
+                   aria-label="DJ Moe D Finest on Apple Music">
 
                     <i class="fa-brands fa-apple"></i>
 
@@ -1382,15 +1542,20 @@
 
         </nav>
 
-        <div class="menu-toggle">
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
 
             <i class="fa-solid fa-bars"></i>
 
-        </div>
+        </button>
 
     </div>
 
 </header>
+
 
 <!-- =========================
      HOME
@@ -1407,6 +1572,7 @@
 
         </div>
 
+
         <h1>
 
             Your Event.<br>
@@ -1417,6 +1583,7 @@
 
         </h1>
 
+
         <p>
 
             Creating unforgettable soundtracks for weddings,
@@ -1426,6 +1593,7 @@
 
         </p>
 
+
         <div class="hero-buttons">
 
             <a href="#booking"
@@ -1434,6 +1602,7 @@
                 Book DJ Moe D
 
             </a>
+
 
             <a href="#music"
                class="btn">
@@ -1447,6 +1616,7 @@
     </div>
 
 </section>
+
 
 <!-- =========================
      ABOUT
@@ -1470,14 +1640,18 @@
 
         </div>
 
+
         <div class="about-grid">
+
 
             <div class="about-image">
 
                 <img src="about-photo.PNG"
-                     alt="DJ Moe D Finest">
+                     alt="DJ Moe D Finest - DJ, Producer and Recording Artist"
+                     loading="lazy">
 
             </div>
+
 
             <div class="about-text">
 
@@ -1485,11 +1659,13 @@
                     DJ Moe D Finest
                 </h3>
 
+
                 <p class="tagline">
 
                     DJ • Producer • Recording Artist
 
                 </p>
+
 
                 <p>
 
@@ -1502,6 +1678,7 @@
                     memories.
 
                 </p>
+
 
                 <p>
 
@@ -1519,6 +1696,7 @@
     </div>
 
 </section>
+
 
 <!-- =========================
      MUSIC
@@ -1542,11 +1720,13 @@
 
         </div>
 
+
         <div class="music-box">
 
             <h3>
                 Listen. Feel. Experience.
             </h3>
+
 
             <p>
 
@@ -1555,10 +1735,12 @@
 
             </p>
 
+
             <div class="music-links">
 
+
                 <a class="music-link"
-                   href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
+                   href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U"
                    target="_blank"
                    rel="noopener noreferrer">
 
@@ -1567,6 +1749,7 @@
                     Spotify
 
                 </a>
+
 
                 <a class="music-link"
                    href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
@@ -1587,6 +1770,7 @@
 
 </section>
 
+
 <!-- =========================
      SERVICES
 ========================= -->
@@ -1605,7 +1789,9 @@
 
         </div>
 
+
         <div class="services-grid">
+
 
             <div class="service">
 
@@ -1626,6 +1812,7 @@
 
             </div>
 
+
             <div class="service">
 
                 <i class="fa-solid fa-users"></i>
@@ -1643,6 +1830,7 @@
                 </p>
 
             </div>
+
 
             <div class="service">
 
@@ -1668,6 +1856,7 @@
 
 </section>
 
+
 <!-- =========================
      GALLERY
 ========================= -->
@@ -1690,49 +1879,55 @@
 
         </div>
 
+
         <div class="gallery-grid">
+
 
             <div class="gallery-item"
                  onclick="openGallery(0)">
 
                 <img src="gallery-1.PNG"
-                     alt="DJ Moe D Finest Gallery Photo 1"
+                     alt="DJ Moe D Finest event performance"
                      loading="lazy">
 
             </div>
+
 
             <div class="gallery-item"
                  onclick="openGallery(1)">
 
                 <img src="gallery-2.PNG"
-                     alt="DJ Moe D Finest Gallery Photo 2"
+                     alt="DJ Moe D Finest DJ performance"
                      loading="lazy">
 
             </div>
+
 
             <div class="gallery-item"
                  onclick="openGallery(2)">
 
                 <img src="gallery-3.jpg"
-                     alt="DJ Moe D Finest Gallery Photo 3"
+                     alt="DJ Moe D Finest event gallery photo"
                      loading="lazy">
 
             </div>
+
 
             <div class="gallery-item"
                  onclick="openGallery(3)">
 
                 <img src="gallery-4.jpg"
-                     alt="DJ Moe D Finest Gallery Photo 4"
+                     alt="DJ Moe D Finest party gallery photo"
                      loading="lazy">
 
             </div>
+
 
             <div class="gallery-item"
                  onclick="openGallery(4)">
 
                 <img src="gallery-5.jpg"
-                     alt="DJ Moe D Finest Gallery Photo 5"
+                     alt="DJ Moe D Finest music event"
                      loading="lazy">
 
             </div>
@@ -1743,15 +1938,21 @@
 
 </section>
 
+
 <!-- =========================
      GALLERY LIGHTBOX
 ========================= -->
 
 <div class="gallery-lightbox"
-     id="galleryLightbox">
+     id="galleryLightbox"
+     role="dialog"
+     aria-modal="true"
+     aria-label="DJ Moe D Finest photo gallery">
+
 
     <div class="lightbox-content"
          id="lightboxContent">
+
 
         <button class="lightbox-close"
                 onclick="closeGallery()"
@@ -1761,6 +1962,7 @@
 
         </button>
 
+
         <button class="lightbox-prev"
                 onclick="previousImage()"
                 aria-label="Previous image">
@@ -1769,10 +1971,12 @@
 
         </button>
 
+
         <img class="lightbox-image"
              id="lightboxImage"
              src=""
              alt="DJ Moe D Finest Gallery">
+
 
         <button class="lightbox-next"
                 onclick="nextImage()"
@@ -1781,6 +1985,7 @@
             <i class="fa-solid fa-chevron-right"></i>
 
         </button>
+
 
         <div class="lightbox-counter"
              id="lightboxCounter">
@@ -1792,6 +1997,7 @@
     </div>
 
 </div>
+
 
 <!-- =========================
      EVENTS
@@ -1811,11 +2017,13 @@
 
         </div>
 
+
         <div class="events-box">
 
             <h3>
                 Made for Your Moment
             </h3>
+
 
             <p>
 
@@ -1826,6 +2034,7 @@
                 deserves.
 
             </p>
+
 
             <a href="#booking"
                class="btn btn-gold">
@@ -1840,6 +2049,7 @@
 
 </section>
 
+
 <!-- =========================
      BOOKING
 ========================= -->
@@ -1848,6 +2058,7 @@
          id="booking">
 
     <div class="container">
+
 
         <h2>
 
@@ -1859,6 +2070,7 @@
 
         </h2>
 
+
         <p>
 
             Planning a wedding, private celebration,
@@ -1868,12 +2080,14 @@
 
         </p>
 
+
         <a href="mailto:djmoe20@yahoo.com"
            class="btn btn-gold">
 
             Request a Booking
 
         </a>
+
 
         <a href="tel:+4917661209239"
            class="btn"
@@ -1887,6 +2101,7 @@
 
 </section>
 
+
 <!-- =========================
      FOOTER
 ========================= -->
@@ -1895,18 +2110,22 @@
 
     <div class="footer-grid">
 
+
         <div class="footer-column">
+
 
             <div class="footer-logo">
 
                 <a href="#home">
 
                     <img src="dj moe.png"
-                         alt="DJ Moe D Finest">
+                         alt="DJ Moe D Finest logo"
+                         loading="lazy">
 
                 </a>
 
             </div>
+
 
             <p>
 
@@ -1916,10 +2135,12 @@
 
             </p>
 
+
             <div class="social-icons">
 
+
                 <a class="tiktok"
-                   href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
+                   href="https://www.tiktok.com/@djmoedfinest"
                    target="_blank"
                    rel="noopener noreferrer"
                    aria-label="TikTok">
@@ -1927,6 +2148,7 @@
                     <i class="fa-brands fa-tiktok"></i>
 
                 </a>
+
 
                 <a class="facebook"
                    href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
@@ -1938,8 +2160,9 @@
 
                 </a>
 
+
                 <a class="instagram"
-                   href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
+                   href="https://www.instagram.com/djmoedfinst"
                    target="_blank"
                    rel="noopener noreferrer"
                    aria-label="Instagram">
@@ -1948,8 +2171,9 @@
 
                 </a>
 
+
                 <a class="spotify"
-                   href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
+                   href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U"
                    target="_blank"
                    rel="noopener noreferrer"
                    aria-label="Spotify">
@@ -1957,6 +2181,7 @@
                     <i class="fa-brands fa-spotify"></i>
 
                 </a>
+
 
                 <a class="apple"
                    href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
@@ -1972,11 +2197,13 @@
 
         </div>
 
+
         <div class="footer-column">
 
             <h3>
                 Quick Links
             </h3>
+
 
             <div class="footer-links">
 
@@ -1998,21 +2225,24 @@
 
         </div>
 
+
         <div class="footer-column">
 
             <h3>
                 Follow Me
             </h3>
 
+
             <div class="footer-links">
 
-                <a href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
+                <a href="https://www.tiktok.com/@djmoedfinest"
                    target="_blank"
                    rel="noopener noreferrer">
 
                     TikTok
 
                 </a>
+
 
                 <a href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
                    target="_blank"
@@ -2022,7 +2252,8 @@
 
                 </a>
 
-                <a href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
+
+                <a href="https://www.instagram.com/djmoedfinst"
                    target="_blank"
                    rel="noopener noreferrer">
 
@@ -2030,13 +2261,15 @@
 
                 </a>
 
-                <a href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
+
+                <a href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U"
                    target="_blank"
                    rel="noopener noreferrer">
 
                     Spotify
 
                 </a>
+
 
                 <a href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
                    target="_blank"
@@ -2050,11 +2283,13 @@
 
         </div>
 
+
         <div class="footer-column">
 
             <h3>
                 Book DJ Moe D
             </h3>
+
 
             <div class="contact-info">
 
@@ -2066,6 +2301,7 @@
 
                 </a>
 
+
                 <a href="tel:+4917661209239">
 
                     <i class="fa-solid fa-phone"></i>
@@ -2076,7 +2312,9 @@
 
             </div>
 
+
             <br>
+
 
             <a href="mailto:djmoe20@yahoo.com"
                class="btn btn-gold">
@@ -2089,6 +2327,7 @@
 
     </div>
 
+
     <div class="copyright">
 
         <div>
@@ -2096,6 +2335,7 @@
             © 2026 DJ Moe D Finest. All Rights Reserved.
 
         </div>
+
 
         <div>
 
@@ -2106,6 +2346,7 @@
     </div>
 
 </footer>
+
 
 <!-- =========================
      JAVASCRIPT
@@ -2118,43 +2359,82 @@
     ========================= */
 
     const menuToggle =
-        document.querySelector('.menu-toggle');
+        document.getElementById("menuToggle");
 
     const nav =
-        document.querySelector('nav');
+        document.getElementById("mainNav");
+
 
     menuToggle.addEventListener(
-        'click',
+        "click",
         function () {
 
-            if (nav.style.display === 'flex') {
+            nav.classList.toggle("mobile-active");
 
-                nav.style.display = 'none';
+            const isOpen =
+                nav.classList.contains("mobile-active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            document.body.classList.toggle(
+                "menu-open",
+                isOpen
+            );
+
+            if (isOpen) {
+
+                menuToggle.innerHTML =
+                    '<i class="fa-solid fa-xmark"></i>';
 
             } else {
 
-                nav.style.display = 'flex';
-
-                nav.style.position = 'absolute';
-
-                nav.style.top = '90px';
-
-                nav.style.left = '0';
-
-                nav.style.right = '0';
-
-                nav.style.background = '#090a08';
-
-                nav.style.padding = '25px';
-
-                nav.style.flexDirection = 'column';
-
-                nav.style.alignItems = 'center';
+                menuToggle.innerHTML =
+                    '<i class="fa-solid fa-bars"></i>';
 
             }
 
         }
     );
+
+
+    /* CLOSE MOBILE MENU WHEN LINK IS CLICKED */
+
+    const navLinks =
+        nav.querySelectorAll("a");
+
+
+    navLinks.forEach(
+        function(link) {
+
+            link.addEventListener(
+                "click",
+                function() {
+
+                    nav.classList.remove(
+                        "mobile-active"
+                    );
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                    document.body.classList.remove(
+                        "menu-open"
+                    );
+
+                    menuToggle.innerHTML =
+                        '<i class="fa-solid fa-bars"></i>';
+
+                }
+            );
+
+        }
+    );
+
 
     /* =========================
        GALLERY SLIDER
@@ -2174,22 +2454,27 @@
 
     ];
 
+
     let currentImage = 0;
+
 
     const lightbox =
         document.getElementById(
             "galleryLightbox"
         );
 
+
     const lightboxImage =
         document.getElementById(
             "lightboxImage"
         );
 
+
     const lightboxCounter =
         document.getElementById(
             "lightboxCounter"
         );
+
 
     function openGallery(index) {
 
@@ -2203,6 +2488,7 @@
 
     }
 
+
     function closeGallery() {
 
         lightbox.classList.remove("active");
@@ -2210,6 +2496,7 @@
         document.body.style.overflow = "";
 
     }
+
 
     function updateGallery() {
 
@@ -2226,6 +2513,7 @@
             galleryImages.length;
 
     }
+
 
     function nextImage() {
 
@@ -2244,6 +2532,7 @@
 
     }
 
+
     function previousImage() {
 
         currentImage--;
@@ -2259,6 +2548,11 @@
 
     }
 
+
+    /* =========================
+       KEYBOARD CONTROLS
+    ========================= */
+
     document.addEventListener(
         "keydown",
         function(event) {
@@ -2273,6 +2567,7 @@
 
             }
 
+
             if (
                 event.key === "ArrowRight"
             ) {
@@ -2281,6 +2576,7 @@
 
             }
 
+
             if (
                 event.key === "ArrowLeft"
             ) {
@@ -2288,6 +2584,7 @@
                 previousImage();
 
             }
+
 
             if (
                 event.key === "Escape"
@@ -2299,6 +2596,11 @@
 
         }
     );
+
+
+    /* =========================
+       CLOSE BY CLICKING OUTSIDE
+    ========================= */
 
     lightbox.addEventListener(
         "click",
@@ -2315,9 +2617,15 @@
         }
     );
 
+
+    /* =========================
+       MOBILE SWIPE
+    ========================= */
+
     let touchStartX = 0;
 
     let touchEndX = 0;
+
 
     lightboxImage.addEventListener(
         "touchstart",
@@ -2327,8 +2635,11 @@
                 event.changedTouches[0].screenX;
 
         },
-        { passive: true }
+        {
+            passive: true
+        }
     );
+
 
     lightboxImage.addEventListener(
         "touchend",
@@ -2340,13 +2651,17 @@
             handleSwipe();
 
         },
-        { passive: true }
+        {
+            passive: true
+        }
     );
+
 
     function handleSwipe() {
 
         const swipeDistance =
             touchEndX - touchStartX;
+
 
         if (
             Math.abs(swipeDistance) < 50
@@ -2355,6 +2670,7 @@
             return;
 
         }
+
 
         if (swipeDistance < 0) {
 
@@ -2369,6 +2685,7 @@
     }
 
 </script>
+
 
 </body>
 
