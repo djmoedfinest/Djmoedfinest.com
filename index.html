@@ -6,20 +6,14 @@
 
     <title>DJ Moe D Finest | DJ • Producer • Recording Artist</title>
 
-    <meta name="description" content="DJ Moe D Finest — Professional DJ, Producer and Recording Artist for weddings, private events, parties, nightlife and special occasions.">
-    <meta name="keywords" content="DJ Moe D Finest, DJ, wedding DJ, party DJ, event DJ, producer, recording artist">
-    <meta name="author" content="DJ Moe D Finest">
+    <meta name="description"
+          content="DJ Moe D Finest — DJ, Producer and Recording Artist for weddings, private events, parties and special occasions.">
 
-    <meta property="og:title" content="DJ Moe D Finest">
-    <meta property="og:description" content="DJ • Producer • Recording Artist">
-    <meta property="og:type" content="website">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
-
-        /* =========================
-           RESET
-        ========================= */
-
         * {
             margin: 0;
             padding: 0;
@@ -32,80 +26,14 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #07090c;
+            background: #050607;
             color: #ffffff;
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
         a {
-            color: inherit;
             text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        /* =========================
-           COLORS
-        ========================= */
-
-        :root {
-            --gold: #ffd400;
-            --gold-light: #fff36a;
-            --dark: #07090c;
-            --dark-2: #0d1117;
-            --dark-3: #151a21;
-            --white: #ffffff;
-            --gray: #b8bec7;
-            --line: rgba(255, 212, 0, 0.35);
-        }
-
-        /* =========================
-           GENERAL
-        ========================= */
-
-        .container {
-            width: min(1200px, 92%);
-            margin: auto;
-        }
-
-        section {
-            padding: 100px 0;
-            position: relative;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title .small-title {
-            color: var(--gold);
-            font-size: 14px;
-            font-weight: 800;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-
-        .section-title h2 {
-            font-size: clamp(32px, 5vw, 56px);
-            text-transform: uppercase;
-            font-weight: 900;
-            letter-spacing: -1px;
-        }
-
-        .section-title h2 span {
-            color: var(--gold);
-        }
-
-        .section-title p {
-            max-width: 700px;
-            margin: 15px auto 0;
-            color: var(--gray);
+            color: inherit;
         }
 
         /* =========================
@@ -113,93 +41,85 @@
         ========================= */
 
         header {
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
-            z-index: 9999;
-            background: rgba(5, 7, 10, 0.95);
-            border-bottom: 1px solid rgba(255, 212, 0, 0.15);
-            backdrop-filter: blur(15px);
+            background: #090a08;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.55);
+            position: sticky;
+            top: 0;
+            z-index: 999;
         }
 
-        .nav {
-            min-height: 90px;
+        .header-inner {
+            max-width: 1200px;
+            margin: auto;
+            height: 105px;
+            padding: 0 30px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 30px;
         }
 
-        /* LOGO */
-
-        .logo {
-            display: flex;
-            align-items: center;
-            min-width: 160px;
-        }
+        /* CLICKABLE LOGO */
 
         .logo img {
-            width: 155px;
-            height: auto;
-            object-fit: contain;
+            width: 190px;
+            max-width: 100%;
+            display: block;
         }
 
-        .logo:hover img {
-            opacity: 0.85;
-        }
-
-        /* NAVIGATION */
-
-        .nav-links {
+        nav {
             display: flex;
             align-items: center;
-            gap: 26px;
-            list-style: none;
+            gap: 28px;
         }
 
-        .nav-links a {
-            font-size: 12px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        nav a {
             color: #ffffff;
-            transition: 0.3s ease;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
         }
 
-        .nav-links a:hover {
-            color: var(--gold);
+        nav a:hover {
+            color: #f4d03f;
         }
 
-        .nav-links .book-link {
-            color: var(--gold);
+        .book-button {
+            color: #f4d03f !important;
+            border-bottom: 2px solid #f4d03f;
+            padding-bottom: 5px;
         }
 
-        /* SOCIAL ICONS */
+        /* HEADER SOCIAL ICONS */
 
-        .social-header {
+        .header-social {
             display: flex;
-            align-items: center;
-            gap: 8px;
+            gap: 9px;
+            margin-left: 5px;
         }
 
-        .social-icon {
+        .header-social a {
             width: 34px;
             height: 34px;
-            border: 1px solid rgba(255, 212, 0, 0.7);
-            border-radius: 50%;
+
             display: flex;
-            justify-content: center;
             align-items: center;
-            font-size: 11px;
-            font-weight: 900;
-            color: var(--gold);
-            transition: 0.3s ease;
+            justify-content: center;
+
+            border: 1px solid #d4af37;
+            border-radius: 50%;
+
+            color: #f4d03f;
+            font-size: 15px;
+
+            transition: 0.3s;
         }
 
-        .social-icon:hover {
-            background: var(--gold);
-            color: #000000;
+        .header-social a:hover {
+            background: #f4d03f;
+            color: #050607;
             transform: translateY(-3px);
         }
 
@@ -207,8 +127,8 @@
 
         .menu-toggle {
             display: none;
-            font-size: 28px;
-            color: var(--gold);
+            color: #f4d03f;
+            font-size: 32px;
             cursor: pointer;
         }
 
@@ -217,385 +137,292 @@
         ========================= */
 
         .hero {
-            min-height: 100vh;
-            padding-top: 90px;
+            min-height: 720px;
             display: flex;
             align-items: center;
-            background:
-                radial-gradient(circle at 50% 20%, rgba(255, 212, 0, 0.12), transparent 35%),
-                linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.95)),
-                #080b10;
-            overflow: hidden;
-        }
 
-        .hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
             background:
-                linear-gradient(90deg, transparent 49%, rgba(255,255,255,0.025) 50%, transparent 51%),
-                linear-gradient(0deg, transparent 49%, rgba(255,255,255,0.02) 50%, transparent 51%);
-            background-size: 80px 80px;
-            pointer-events: none;
+                linear-gradient(
+                    rgba(0,0,0,0.68),
+                    rgba(0,0,0,0.85)
+                ),
+                radial-gradient(
+                    circle at center,
+                    #222 0%,
+                    #080909 55%,
+                    #030404 100%
+                );
+
+            border-bottom: 1px solid rgba(212,175,55,0.35);
         }
 
         .hero-content {
-            text-align: center;
-            position: relative;
-            z-index: 2;
-            max-width: 1050px;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
+            text-align: center;
         }
 
-        .hero-kicker {
-            color: var(--gold);
+        .hero-small {
+            color: #f4d03f;
             font-size: 14px;
-            letter-spacing: 5px;
-            font-weight: 900;
+            font-weight: bold;
+            letter-spacing: 4px;
             text-transform: uppercase;
             margin-bottom: 18px;
         }
 
         .hero h1 {
-            font-size: clamp(45px, 8vw, 95px);
-            line-height: 0.95;
+            font-size: clamp(42px, 7vw, 82px);
+            line-height: 1;
+            font-weight: 900;
             text-transform: uppercase;
-            font-weight: 950;
-            letter-spacing: -4px;
+            margin-bottom: 25px;
         }
 
         .hero h1 span {
-            color: var(--gold);
+            color: #f4d03f;
         }
 
-        .hero-subtitle {
-            margin: 25px auto;
-            max-width: 750px;
-            color: #d3d7dd;
-            font-size: 17px;
+        .hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #c7c7c7;
+            font-size: 18px;
         }
 
         .hero-buttons {
+            margin-top: 35px;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
             gap: 15px;
-            margin-top: 35px;
+            flex-wrap: wrap;
         }
 
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px 27px;
-            border: 1px solid var(--gold);
-            font-size: 12px;
-            font-weight: 900;
+            display: inline-block;
+            padding: 14px 27px;
+            border: 1px solid #f4d03f;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: 0.3s ease;
+            font-size: 13px;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
         .btn-gold {
-            background: var(--gold);
-            color: #000;
+            background: #f4d03f;
+            color: #050607;
         }
 
-        .btn-gold:hover {
-            background: #ffffff;
-            border-color: #ffffff;
+        .btn:hover {
             transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(244,208,63,0.18);
         }
 
-        .btn-outline {
-            color: #ffffff;
-            background: transparent;
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            padding: 90px 30px;
+            border-bottom: 1px solid rgba(212,175,55,0.25);
         }
 
-        .btn-outline:hover {
-            background: var(--gold);
-            color: #000;
-            transform: translateY(-3px);
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            color: #f4d03f;
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .section-title .line {
+            width: 90px;
+            height: 2px;
+            background: #f4d03f;
+            margin: 15px auto;
+        }
+
+        .section-title p {
+            color: #aaa;
         }
 
         /* =========================
            ABOUT
         ========================= */
 
-        .about {
-            background: #0b0f14;
-            border-top: 1px solid var(--line);
-            border-bottom: 1px solid var(--line);
-        }
-
         .about-grid {
             display: grid;
-            grid-template-columns: 1fr 1.3fr;
-            gap: 70px;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
             align-items: center;
         }
 
-        .about-image {
-            min-height: 480px;
-            border: 1px solid rgba(255, 212, 0, 0.35);
-            background:
-                radial-gradient(circle at center, rgba(255,212,0,0.15), transparent 55%),
-                linear-gradient(135deg, #151b23, #050609);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
+        .about-logo {
+            text-align: center;
         }
 
-        .about-image::before {
-            content: "DJ";
-            font-size: 180px;
-            font-weight: 900;
-            color: rgba(255,255,255,0.03);
-            position: absolute;
+        .about-logo img {
+            width: 350px;
+            max-width: 90%;
         }
 
-        .about-image .about-logo {
-            position: relative;
-            z-index: 2;
-            width: 70%;
-        }
-
-        .about-text .small-title {
-            color: var(--gold);
-            font-size: 13px;
-            font-weight: 900;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-
-        .about-text h2 {
-            font-size: clamp(35px, 5vw, 60px);
-            line-height: 1;
-            text-transform: uppercase;
-            margin: 15px 0 25px;
-        }
-
-        .about-text h2 span {
-            color: var(--gold);
+        .about-text h3 {
+            color: #f4d03f;
+            font-size: 32px;
+            margin-bottom: 18px;
         }
 
         .about-text p {
-            color: var(--gray);
+            color: #bdbdbd;
             margin-bottom: 18px;
-            font-size: 16px;
         }
 
-        .about-signature {
-            color: var(--gold);
-            font-weight: 900;
-            font-size: 18px;
-            margin-top: 25px;
+        .tagline {
+            color: #ffffff !important;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         /* =========================
            SERVICES
         ========================= */
 
-        .services {
-            background: #07090c;
-        }
-
-        .service-grid {
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            border-top: 1px solid var(--line);
-            border-bottom: 1px solid var(--line);
+            gap: 0;
         }
 
-        .service-card {
-            padding: 55px 35px;
+        .service {
             text-align: center;
-            border-right: 1px solid var(--line);
-            transition: 0.3s ease;
+            padding: 40px 30px;
+            border-right: 1px solid rgba(212,175,55,0.35);
         }
 
-        .service-card:last-child {
+        .service:last-child {
             border-right: none;
         }
 
-        .service-card:hover {
-            background: rgba(255,212,0,0.035);
-            transform: translateY(-5px);
-        }
-
-        .service-number {
-            color: var(--gold);
-            font-size: 13px;
-            font-weight: 900;
-            letter-spacing: 2px;
+        .service i {
+            color: #f4d03f;
+            font-size: 42px;
             margin-bottom: 20px;
         }
 
-        .service-icon {
-            font-size: 45px;
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            color: var(--gold);
-            font-size: 20px;
+        .service h3 {
+            color: #f4d03f;
             text-transform: uppercase;
             margin-bottom: 15px;
         }
 
-        .service-card p {
-            color: var(--gray);
-            font-size: 14px;
+        .service p {
+            color: #aaa;
+            font-size: 15px;
         }
 
         /* =========================
            MUSIC
         ========================= */
 
-        .music {
-            background:
-                radial-gradient(circle at center, rgba(255,212,0,0.06), transparent 45%),
-                #0b0f14;
-            border-top: 1px solid var(--line);
-        }
-
         .music-box {
-            max-width: 900px;
+            max-width: 850px;
             margin: auto;
-            padding: 15px;
-            border: 1px solid rgba(255,212,0,0.4);
-            background: #050609;
+            text-align: center;
         }
 
-        .music-box iframe {
-            width: 100%;
-            border: 0;
-            border-radius: 8px;
+        .music-box h3 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .music-box p {
+            color: #aaa;
+            margin-bottom: 30px;
         }
 
         .music-links {
             display: flex;
             justify-content: center;
+            gap: 15px;
             flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 25px;
         }
 
         .music-link {
-            padding: 12px 20px;
-            border: 1px solid rgba(255,212,0,0.5);
-            color: var(--gold);
-            font-size: 11px;
-            font-weight: 900;
-            text-transform: uppercase;
-            transition: 0.3s ease;
+            border: 1px solid #f4d03f;
+            padding: 14px 22px;
+            color: #f4d03f;
+            transition: 0.3s;
+        }
+
+        .music-link i {
+            margin-right: 8px;
         }
 
         .music-link:hover {
-            background: var(--gold);
-            color: #000;
+            background: #f4d03f;
+            color: #050607;
         }
 
         /* =========================
            GALLERY
         ========================= */
 
-        .gallery {
-            background: #07090c;
-        }
-
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 7px;
+            gap: 8px;
         }
 
         .gallery-item {
-            position: relative;
-            height: 260px;
+            height: 220px;
+            background: linear-gradient(135deg, #171717, #292929);
+            border: 1px solid rgba(212,175,55,0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
             overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.08);
-            background: #11151b;
         }
 
         .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: 0.5s ease;
+            transition: 0.4s;
         }
 
         .gallery-item:hover img {
-            transform: scale(1.08);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(transparent, rgba(0,0,0,0.8));
-            opacity: 0;
-            transition: 0.3s ease;
-            display: flex;
-            align-items: flex-end;
-            padding: 20px;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
-        }
-
-        .gallery-overlay span {
-            color: var(--gold);
-            font-size: 12px;
-            font-weight: 900;
-            text-transform: uppercase;
+            transform: scale(1.05);
         }
 
         /* =========================
            EVENTS
         ========================= */
 
-        .events {
-            background: #0b0f14;
-            border-top: 1px solid var(--line);
-        }
-
-        .event-list {
-            max-width: 900px;
+        .events-box {
+            text-align: center;
+            max-width: 800px;
             margin: auto;
         }
 
-        .event {
-            display: grid;
-            grid-template-columns: 130px 1fr auto;
-            gap: 25px;
-            align-items: center;
-            padding: 25px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+        .events-box h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
         }
 
-        .event-date {
-            color: var(--gold);
-            font-weight: 900;
-            font-size: 16px;
-        }
-
-        .event-info h3 {
-            font-size: 20px;
-            text-transform: uppercase;
-        }
-
-        .event-info p {
-            color: var(--gray);
-            font-size: 14px;
-        }
-
-        .event-location {
-            color: var(--gold);
-            font-size: 12px;
-            font-weight: 900;
-            text-transform: uppercase;
+        .events-box p {
+            color: #aaa;
+            margin-bottom: 30px;
         }
 
         /* =========================
@@ -603,121 +430,29 @@
         ========================= */
 
         .booking {
+            text-align: center;
             background:
-                radial-gradient(circle at center, rgba(255,212,0,0.09), transparent 50%),
-                #07090c;
-            border-top: 1px solid var(--line);
+                radial-gradient(
+                    circle at center,
+                    #181818,
+                    #050607 70%
+                );
         }
 
-        .booking-box {
-            max-width: 900px;
-            margin: auto;
-            border: 1px solid rgba(255,212,0,0.4);
-            padding: 50px;
-            background: rgba(0,0,0,0.3);
-        }
-
-        .booking-box h2 {
-            text-align: center;
-            font-size: clamp(30px, 5vw, 55px);
+        .booking h2 {
+            font-size: clamp(38px, 6vw, 65px);
             text-transform: uppercase;
-            line-height: 1;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
-        .booking-box h2 span {
-            color: var(--gold);
+        .booking h2 span {
+            color: #f4d03f;
         }
 
-        .booking-box > p {
-            color: var(--gray);
-            text-align: center;
-            margin-bottom: 35px;
-        }
-
-        .contact-details {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 35px;
-        }
-
-        .contact-detail {
-            padding: 15px 20px;
-            border: 1px solid rgba(255,212,0,0.25);
-            text-align: center;
-        }
-
-        .contact-detail small {
-            display: block;
-            color: var(--gold);
-            font-size: 10px;
-            text-transform: uppercase;
-            font-weight: 900;
-            letter-spacing: 1px;
-            margin-bottom: 4px;
-        }
-
-        .contact-detail a {
-            font-weight: 700;
-            font-size: 14px;
-        }
-
-        .contact-detail a:hover {
-            color: var(--gold);
-        }
-
-        .booking-form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group.full {
-            grid-column: 1 / -1;
-        }
-
-        .form-group label {
-            color: var(--gold);
-            font-size: 11px;
-            font-weight: 900;
-            text-transform: uppercase;
-            margin-bottom: 7px;
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 14px;
-            border: 1px solid rgba(255,255,255,0.15);
-            background: #11151b;
-            color: #ffffff;
-            outline: none;
-            font-family: inherit;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            border-color: var(--gold);
-        }
-
-        .form-group textarea {
-            min-height: 130px;
-            resize: vertical;
-        }
-
-        .form-button {
-            grid-column: 1 / -1;
-            text-align: center;
-            margin-top: 10px;
+        .booking p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #aaa;
         }
 
         /* =========================
@@ -725,107 +460,194 @@
         ========================= */
 
         footer {
-            background: #040507;
-            border-top: 1px solid rgba(255,212,0,0.3);
-            padding: 70px 0 25px;
+            background: #080907;
+            padding: 70px 30px 25px;
         }
 
         .footer-grid {
+            max-width: 1200px;
+            margin: auto;
+
             display: grid;
-            grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
             gap: 50px;
         }
 
-        .footer-logo {
-            width: 170px;
+        .footer-logo img {
+            width: 220px;
             margin-bottom: 20px;
         }
 
+        .footer-column p {
+            color: #999;
+            max-width: 350px;
+        }
+
         .footer-column h3 {
-            color: var(--gold);
-            font-size: 13px;
+            color: #f4d03f;
             text-transform: uppercase;
+            font-size: 16px;
             letter-spacing: 2px;
             margin-bottom: 20px;
         }
 
-        .footer-column p,
-        .footer-column a {
-            color: #aeb4bd;
-            font-size: 13px;
-        }
-
-        .footer-column a {
-            display: block;
-            margin-bottom: 8px;
-            transition: 0.3s ease;
-        }
-
-        .footer-column a:hover {
-            color: var(--gold);
-            padding-left: 4px;
-        }
-
-        .footer-social {
+        .footer-links {
             display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #f4d03f;
+            padding-left: 5px;
+        }
+
+        /* =========================
+           BIG SOCIAL ICONS
+        ========================= */
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
             flex-wrap: wrap;
-            gap: 8px;
             margin-top: 20px;
         }
 
-        .footer-social a {
-            width: 38px;
-            height: 38px;
-            border: 1px solid rgba(255,212,0,0.5);
+        .social-icons a {
+            width: 45px;
+            height: 45px;
+
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--gold);
-            font-weight: 900;
-            font-size: 11px;
-            margin: 0;
+
+            border: 1px solid #d4af37;
+            border-radius: 50%;
+
+            color: #f4d03f;
+            font-size: 19px;
+
+            transition: all 0.3s ease;
         }
 
-        .footer-social a:hover {
-            background: var(--gold);
-            color: #000;
-            padding-left: 0;
+        .social-icons a:hover {
+            background: #f4d03f;
+            color: #050607;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(244,208,63,0.2);
         }
 
-        .newsletter input {
-            width: 100%;
-            padding: 14px;
-            background: #10141a;
-            border: 1px solid rgba(255,255,255,0.15);
-            color: white;
+        /* TikTok */
+
+        .social-icons .tiktok:hover {
+            background: #ffffff;
+            color: #050607;
+        }
+
+        /* Spotify */
+
+        .social-icons .spotify:hover {
+            background: #1DB954;
+            color: #ffffff;
+        }
+
+        /* Facebook */
+
+        .social-icons .facebook:hover {
+            background: #1877F2;
+            color: #ffffff;
+        }
+
+        /* Instagram */
+
+        .social-icons .instagram:hover {
+            background: #E4405F;
+            color: #ffffff;
+        }
+
+        /* Apple */
+
+        .social-icons .apple:hover {
+            background: #ffffff;
+            color: #050607;
+        }
+
+        .contact-info {
+            color: #aaa;
+        }
+
+        .contact-info a {
+            display: block;
             margin-bottom: 10px;
-            outline: none;
+            transition: 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #f4d03f;
         }
 
         .copyright {
-            border-top: 1px solid rgba(255,255,255,0.08);
-            margin-top: 50px;
-            padding-top: 20px;
+            max-width: 1200px;
+            margin: 50px auto 0;
+            padding-top: 25px;
+
+            border-top: 1px solid rgba(212,175,55,0.2);
+
             display: flex;
             justify-content: space-between;
             gap: 20px;
-            color: #6f747c;
-            font-size: 11px;
-            text-transform: uppercase;
+
+            color: #666;
+            font-size: 12px;
         }
 
         /* =========================
            MOBILE
         ========================= */
 
-        @media (max-width: 1000px) {
+        @media (max-width: 900px) {
 
-            .nav-links {
-                gap: 14px;
+            .header-inner {
+                height: 90px;
             }
 
-            .social-header {
+            .logo img {
+                width: 155px;
+            }
+
+            nav {
                 display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero {
+                min-height: 600px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service {
+                border-right: none;
+                border-bottom: 1px solid rgba(212,175,55,0.3);
+            }
+
+            .service:last-child {
+                border-bottom: none;
             }
 
             .gallery-grid {
@@ -833,82 +655,26 @@
             }
 
             .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr 1fr;
             }
         }
 
-        @media (max-width: 760px) {
+        @media (max-width: 600px) {
 
             section {
-                padding: 75px 0;
+                padding: 65px 20px;
             }
 
-            .nav {
-                min-height: 75px;
-            }
-
-            .logo img {
-                width: 125px;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-
-            .nav-links {
-                position: absolute;
-                top: 75px;
-                left: 0;
-                width: 100%;
-                background: rgba(5,7,10,0.98);
-                display: none;
-                flex-direction: column;
-                padding: 25px;
-                border-bottom: 1px solid rgba(255,212,0,0.3);
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links a {
-                font-size: 14px;
-                padding: 7px;
-            }
-
-            .hero {
-                min-height: 90vh;
-                padding-top: 80px;
+            .header-inner {
+                padding: 0 20px;
             }
 
             .hero h1 {
-                letter-spacing: -2px;
+                font-size: 43px;
             }
 
-            .hero-subtitle {
-                font-size: 14px;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .about-image {
-                min-height: 330px;
-            }
-
-            .service-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .service-card {
-                border-right: none;
-                border-bottom: 1px solid var(--line);
-            }
-
-            .service-card:last-child {
-                border-bottom: none;
+            .hero p {
+                font-size: 16px;
             }
 
             .gallery-grid {
@@ -916,64 +682,23 @@
             }
 
             .gallery-item {
-                height: 180px;
-            }
-
-            .event {
-                grid-template-columns: 1fr;
-                gap: 7px;
-            }
-
-            .booking-box {
-                padding: 30px 20px;
-            }
-
-            .booking-form {
-                grid-template-columns: 1fr;
-            }
-
-            .form-group.full,
-            .form-button {
-                grid-column: auto;
+                height: 150px;
             }
 
             .footer-grid {
                 grid-template-columns: 1fr;
-                gap: 35px;
+                gap: 40px;
             }
 
             .copyright {
                 flex-direction: column;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: flex-start;
             }
         }
-
-        @media (max-width: 480px) {
-
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-item {
-                height: 240px;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-            }
-
-            .contact-details {
-                flex-direction: column;
-            }
-
-            .contact-detail {
-                width: 100%;
-            }
-        }
-
     </style>
 </head>
 
@@ -985,75 +710,69 @@
 
 <header>
 
-    <div class="container nav">
+    <div class="header-inner">
 
-        <!-- LOGO - CLICKING IT GOES HOME -->
-        <a href="#home" class="logo" aria-label="DJ Moe D Finest Home">
-            <img src="dj moe.png" alt="DJ Moe D Finest Logo">
+        <!-- CLICK LOGO TO RETURN HOME -->
+        <a href="#home" class="logo">
+            <img src="dj moe.png" alt="DJ Moe D Finest">
         </a>
 
-        <div class="menu-toggle" id="menuToggle">
-            ☰
-        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#music">Music</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#events">Events</a>
+            <a href="#booking" class="book-button">Book Now</a>
 
-        <ul class="nav-links" id="navLinks">
+            <div class="header-social">
 
-            <li>
-                <a href="#home">Home</a>
-            </li>
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
 
-            <li>
-                <a href="#about">About</a>
-            </li>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
 
-            <li>
-                <a href="#music">Music</a>
-            </li>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
 
-            <li>
-                <a href="#services">Services</a>
-            </li>
+                <!-- Spotify -->
+                <a href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Spotify">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
 
-            <li>
-                <a href="#gallery">Gallery</a>
-            </li>
+                <!-- Apple Music -->
+                <a href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Apple Music">
+                    <i class="fa-brands fa-apple"></i>
+                </a>
 
-            <li>
-                <a href="#events">Events</a>
-            </li>
+            </div>
+        </nav>
 
-            <li>
-                <a href="#booking" class="book-link">Book Now</a>
-            </li>
-
-        </ul>
-
-        <div class="social-header">
-
-            <a class="social-icon"
-               href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
-               target="_blank"
-               rel="noopener"
-               aria-label="Instagram">
-                IG
-            </a>
-
-            <a class="social-icon"
-               href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
-               target="_blank"
-               rel="noopener"
-               aria-label="Facebook">
-                FB
-            </a>
-
-            <a class="social-icon"
-               href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
-               target="_blank"
-               rel="noopener"
-               aria-label="TikTok">
-                TT
-            </a>
-
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
         </div>
 
     </div>
@@ -1062,41 +781,38 @@
 
 
 <!-- =========================
-     HERO
+     HOME
 ========================= -->
 
 <section class="hero" id="home">
 
-    <div class="container">
+    <div class="hero-content">
 
-        <div class="hero-content">
+        <div class="hero-small">
+            DJ • Producer • Recording Artist
+        </div>
 
-            <div class="hero-kicker">
-                DJ • PRODUCER • RECORDING ARTIST
-            </div>
+        <h1>
+            Your Event.<br>
+            <span>Your Soundtrack.</span>
+        </h1>
 
-            <h1>
-                LET'S MAKE YOUR NEXT EVENT
-                <span>UNFORGETTABLE.</span>
-            </h1>
+        <p>
+            Creating unforgettable soundtracks for weddings,
+            private events, parties and special occasions.
+            From the first song to the final track,
+            every moment deserves the finest sound.
+        </p>
 
-            <p class="hero-subtitle">
-                Planning a wedding, private celebration, corporate event,
-                party or nightlife experience? Connect with DJ Moe D Finest
-                and let's create the perfect soundtrack for your event.
-            </p>
+        <div class="hero-buttons">
 
-            <div class="hero-buttons">
+            <a href="#booking" class="btn btn-gold">
+                Book DJ Moe D
+            </a>
 
-                <a href="#booking" class="btn btn-gold">
-                    Request Availability
-                </a>
-
-                <a href="#music" class="btn btn-outline">
-                    Listen To Music
-                </a>
-
-            </div>
+            <a href="#music" class="btn">
+                Listen to Music
+            </a>
 
         </div>
 
@@ -1109,165 +825,52 @@
      ABOUT
 ========================= -->
 
-<section class="about" id="about">
-
-    <div class="container">
-
-        <div class="about-grid">
-
-            <div class="about-image">
-
-                <img
-                    src="dj moe.png"
-                    alt="DJ Moe D Finest"
-                    class="about-logo"
-                >
-
-            </div>
-
-            <div class="about-text">
-
-                <div class="small-title">
-                    About DJ Moe D Finest
-                </div>
-
-                <h2>
-                    MUSIC IS A
-                    <span>CONVERSATION</span>
-                    WITH THE ROOM.
-                </h2>
-
-                <p>
-                    DJ Moe D Finest is a professional DJ, producer and
-                    recording artist dedicated to creating unforgettable
-                    musical experiences.
-                </p>
-
-                <p>
-                    From elegant weddings and intimate private celebrations
-                    to energetic parties, nightlife and special events,
-                    every performance is carefully built around the people
-                    in the room.
-                </p>
-
-                <p>
-                    The goal is simple — understand the crowd, feel the
-                    energy and deliver the right music at exactly the right
-                    moment.
-                </p>
-
-                <p>
-                    Whether you want a sophisticated atmosphere, classic
-                    favourites, modern hits or a dance floor that stays
-                    moving all night, DJ Moe D Finest brings experience,
-                    personality and musical taste to every event.
-                </p>
-
-                <div class="about-signature">
-                    DJ MOE D FINEST
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     SERVICES
-========================= -->
-
-<section class="services" id="services">
+<section id="about">
 
     <div class="container">
 
         <div class="section-title">
 
-            <div class="small-title">
-                What I Do
-            </div>
+            <h2>About</h2>
 
-            <h2>
-                <span>EVENTS</span> & EXPERIENCES
-            </h2>
+            <div class="line"></div>
 
-            <p>
-                Professional DJ entertainment designed around your event,
-                your guests and your sound.
-            </p>
+            <p>Music is a conversation with the room.</p>
 
         </div>
 
+        <div class="about-grid">
 
-        <div class="service-grid">
+            <div class="about-logo">
 
-            <div class="service-card">
-
-                <div class="service-number">
-                    01
-                </div>
-
-                <div class="service-icon">
-                    💍
-                </div>
-
-                <h3>
-                    Weddings
-                </h3>
-
-                <p>
-                    Elegant sound. Perfect timing. Unforgettable memories.
-                    From the ceremony and cocktail hour to the first dance,
-                    every moment gets the right soundtrack.
-                </p>
+                <img src="dj moe.png"
+                     alt="DJ Moe D Finest Logo">
 
             </div>
 
+            <div class="about-text">
 
-            <div class="service-card">
+                <h3>DJ Moe D Finest</h3>
 
-                <div class="service-number">
-                    02
-                </div>
-
-                <div class="service-icon">
-                    🎉
-                </div>
-
-                <h3>
-                    Private Events
-                </h3>
-
-                <p>
-                    Personalized music and energy built around your
-                    celebration. Birthdays, anniversaries, corporate events
-                    and special occasions.
+                <p class="tagline">
+                    DJ • Producer • Recording Artist
                 </p>
 
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-number">
-                    03
-                </div>
-
-                <div class="service-icon">
-                    🎧
-                </div>
-
-                <h3>
-                    Parties & Nightlife
-                </h3>
+                <p>
+                    DJ Moe D Finest brings energy, style and
+                    musical experience to every event.
+                    Whether it's an elegant wedding, a private
+                    celebration, corporate event or a packed
+                    nightlife experience, the goal is simple:
+                    create the right atmosphere and unforgettable
+                    memories.
+                </p>
 
                 <p>
-                    From the first track to the final song, keeping the
-                    energy alive with powerful music, smooth transitions
-                    and the right atmosphere.
+                    Every crowd is different. Every celebration
+                    has its own story. That's why every set is
+                    carefully built around the people, the moment
+                    and the energy in the room.
                 </p>
 
             </div>
@@ -1283,58 +886,114 @@
      MUSIC
 ========================= -->
 
-<section class="music" id="music">
+<section id="music">
 
     <div class="container">
 
         <div class="section-title">
 
-            <div class="small-title">
-                Listen Now
-            </div>
+            <h2>Music</h2>
 
-            <h2>
-                DJ MOE D <span>MUSIC</span>
-            </h2>
+            <div class="line"></div>
 
-            <p>
-                Listen to my latest music, releases and sounds.
-            </p>
+            <p>Listen to DJ Moe D Finest</p>
 
         </div>
-
 
         <div class="music-box">
 
-            <!-- SPOTIFY ARTIST EMBED -->
+            <h3>Listen. Feel. Experience.</h3>
 
-            <iframe
-                src="https://open.spotify.com/embed/artist/47E0dD3phDfVAbgxiB734U?utm_source=generator"
-                height="352"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy">
-            </iframe>
+            <p>
+                Discover music, mixes and releases from
+                DJ Moe D Finest.
+            </p>
+
+            <div class="music-links">
+
+                <a class="music-link"
+                   href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
+                   target="_blank">
+                    <i class="fa-brands fa-spotify"></i>
+                    Spotify
+                </a>
+
+                <a class="music-link"
+                   href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
+                   target="_blank">
+                    <i class="fa-brands fa-apple"></i>
+                    Apple Music
+                </a>
+
+            </div>
 
         </div>
 
+    </div>
 
-        <div class="music-links">
+</section>
 
-            <a
-                href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
-                target="_blank"
-                rel="noopener"
-                class="music-link">
-                Spotify
-            </a>
 
-            <a
-                href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
-                target="_blank"
-                rel="noopener"
-                class="music-link">
-                Apple Music
-            </a>
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>What I Do</h2>
+
+            <div class="line"></div>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service">
+
+                <i class="fa-solid fa-ring"></i>
+
+                <h3>Weddings</h3>
+
+                <p>
+                    Elegant sound. Perfect timing.
+                    Unforgettable memories. From the ceremony
+                    and cocktail hour to the first dance,
+                    every moment gets the right soundtrack.
+                </p>
+
+            </div>
+
+            <div class="service">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>Private Events</h3>
+
+                <p>
+                    Personalized music and energy built around
+                    your celebration. Birthdays, anniversaries,
+                    corporate events and special occasions.
+                </p>
+
+            </div>
+
+            <div class="service">
+
+                <i class="fa-solid fa-headphones"></i>
+
+                <h3>Parties & Nightlife</h3>
+
+                <p>
+                    From the first track to the final song,
+                    keeping the room alive with powerful music,
+                    smooth transitions and the right energy.
+                </p>
+
+            </div>
 
         </div>
 
@@ -1347,140 +1006,46 @@
      GALLERY
 ========================= -->
 
-<section class="gallery" id="gallery">
+<section id="gallery">
 
     <div class="container">
 
         <div class="section-title">
 
-            <div class="small-title">
-                Live Moments
-            </div>
+            <h2>Gallery</h2>
 
-            <h2>
-                THE <span>GALLERY</span>
-            </h2>
+            <div class="line"></div>
 
-            <p>
-                A look inside the energy, atmosphere and unforgettable
-                moments created at DJ Moe D Finest events.
-            </p>
+            <p>Moments behind the music</p>
 
         </div>
 
-
         <div class="gallery-grid">
 
+            <!--
+            Replace these boxes with your own images.
 
-            <!-- IMAGE 1 -->
+            Example:
+
             <div class="gallery-item">
+                <img src="gallery1.jpg" alt="DJ Moe D Finest performing">
+            </div>
+            -->
 
-                <img
-                    src="gallery1.jpg"
-                    alt="DJ Moe D Finest performing">
-
-                <div class="gallery-overlay">
-                    <span>DJ Performance</span>
-                </div>
-
+            <div class="gallery-item">
+                <i class="fa-solid fa-music"></i>
             </div>
 
-
-            <!-- IMAGE 2 -->
             <div class="gallery-item">
-
-                <img
-                    src="gallery2.jpg"
-                    alt="DJ Moe D Finest event">
-
-                <div class="gallery-overlay">
-                    <span>Live Event</span>
-                </div>
-
+                <i class="fa-solid fa-compact-disc"></i>
             </div>
 
-
-            <!-- IMAGE 3 -->
             <div class="gallery-item">
-
-                <img
-                    src="gallery3.jpg"
-                    alt="DJ Moe D Finest party">
-
-                <div class="gallery-overlay">
-                    <span>Party</span>
-                </div>
-
+                <i class="fa-solid fa-users"></i>
             </div>
 
-
-            <!-- IMAGE 4 -->
             <div class="gallery-item">
-
-                <img
-                    src="gallery4.jpg"
-                    alt="DJ Moe D Finest nightlife">
-
-                <div class="gallery-overlay">
-                    <span>Nightlife</span>
-                </div>
-
-            </div>
-
-
-            <!-- IMAGE 5 -->
-            <div class="gallery-item">
-
-                <img
-                    src="gallery5.jpg"
-                    alt="DJ Moe D Finest performance">
-
-                <div class="gallery-overlay">
-                    <span>Performance</span>
-                </div>
-
-            </div>
-
-
-            <!-- IMAGE 6 -->
-            <div class="gallery-item">
-
-                <img
-                    src="gallery6.jpg"
-                    alt="DJ Moe D Finest crowd">
-
-                <div class="gallery-overlay">
-                    <span>Good Vibes</span>
-                </div>
-
-            </div>
-
-
-            <!-- IMAGE 7 -->
-            <div class="gallery-item">
-
-                <img
-                    src="gallery7.jpg"
-                    alt="DJ Moe D Finest event">
-
-                <div class="gallery-overlay">
-                    <span>Event</span>
-                </div>
-
-            </div>
-
-
-            <!-- IMAGE 8 -->
-            <div class="gallery-item">
-
-                <img
-                    src="gallery8.jpg"
-                    alt="DJ Moe D Finest crowd">
-
-                <div class="gallery-overlay">
-                    <span>Dance Floor</span>
-                </div>
-
+                <i class="fa-solid fa-headphones"></i>
             </div>
 
         </div>
@@ -1494,79 +1059,33 @@
      EVENTS
 ========================= -->
 
-<section class="events" id="events">
+<section id="events">
 
     <div class="container">
 
         <div class="section-title">
 
-            <div class="small-title">
-                Upcoming
-            </div>
+            <h2>Events</h2>
 
-            <h2>
-                EVENTS & <span>APPEARANCES</span>
-            </h2>
-
-            <p>
-                Check back for upcoming events, parties and DJ appearances.
-            </p>
+            <div class="line"></div>
 
         </div>
 
+        <div class="events-box">
 
-        <div class="event-list">
+            <h3>Made for Your Moment</h3>
 
+            <p>
+                Weddings, birthdays, private celebrations,
+                corporate events, parties and nightlife.
+                DJ Moe D Finest brings professional sound,
+                musical versatility and the energy your event
+                deserves.
+            </p>
 
-            <div class="event">
-
-                <div class="event-date">
-                    COMING SOON
-                </div>
-
-                <div class="event-info">
-
-                    <h3>
-                        DJ Moe D Finest Live
-                    </h3>
-
-                    <p>
-                        New event announcement coming soon.
-                    </p>
-
-                </div>
-
-                <div class="event-location">
-                    TBA
-                </div>
-
-            </div>
-
-
-            <div class="event">
-
-                <div class="event-date">
-                    BOOK NOW
-                </div>
-
-                <div class="event-info">
-
-                    <h3>
-                        Private Event
-                    </h3>
-
-                    <p>
-                        Available for weddings, private parties and special occasions.
-                    </p>
-
-                </div>
-
-                <div class="event-location">
-                    Germany
-                </div>
-
-            </div>
-
+            <a href="#booking" class="btn btn-gold">
+                Book Now
+            </a>
 
         </div>
 
@@ -1583,198 +1102,30 @@
 
     <div class="container">
 
-        <div class="booking-box">
-
-            <h2>
-                LET'S MAKE YOUR NEXT EVENT
-                <span>UNFORGETTABLE.</span>
-            </h2>
-
-            <p>
-                Planning a wedding, private celebration, party, nightlife
-                experience or special event? Get in touch with DJ Moe D Finest.
-            </p>
-
-
-            <!-- CONTACT DETAILS -->
-
-            <div class="contact-details">
-
-                <div class="contact-detail">
-
-                    <small>
-                        Email
-                    </small>
-
-                    <a href="mailto:djmoe20@yahoo.com">
-                        djmoe20@yahoo.com
-                    </a>
-
-                </div>
-
-
-                <div class="contact-detail">
-
-                    <small>
-                        Phone
-                    </small>
-
-                    <a href="tel:+4917661209239">
-                        +49 176 61209239
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- BOOKING FORM -->
-
-            <form
-                class="booking-form"
-                action="mailto:djmoe20@yahoo.com"
-                method="post"
-                enctype="text/plain">
-
-
-                <div class="form-group">
-
-                    <label>
-                        Your Name
-                    </label>
-
-                    <input
-                        type="text"
-                        name="Name"
-                        placeholder="Your full name"
-                        required>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>
-                        Email
-                    </label>
-
-                    <input
-                        type="email"
-                        name="Email"
-                        placeholder="Your email address"
-                        required>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>
-                        Phone
-                    </label>
-
-                    <input
-                        type="tel"
-                        name="Phone"
-                        placeholder="Your phone number">
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>
-                        Event Type
-                    </label>
-
-                    <select name="Event Type">
-
-                        <option value="">
-                            Select event type
-                        </option>
-
-                        <option>
-                            Wedding
-                        </option>
-
-                        <option>
-                            Private Event
-                        </option>
-
-                        <option>
-                            Birthday
-                        </option>
-
-                        <option>
-                            Corporate Event
-                        </option>
-
-                        <option>
-                            Party / Nightlife
-                        </option>
-
-                        <option>
-                            Other
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>
-                        Event Date
-                    </label>
-
-                    <input
-                        type="date"
-                        name="Event Date">
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>
-                        Event Location
-                    </label>
-
-                    <input
-                        type="text"
-                        name="Event Location"
-                        placeholder="City / Venue">
-
-                </div>
-
-
-                <div class="form-group full">
-
-                    <label>
-                        Tell Me About Your Event
-                    </label>
-
-                    <textarea
-                        name="Message"
-                        placeholder="Tell me about your event, number of guests, preferred music style, etc."></textarea>
-
-                </div>
-
-
-                <div class="form-button">
-
-                    <button
-                        type="submit"
-                        class="btn btn-gold">
-                        Send Booking Request
-                    </button>
-
-                </div>
-
-            </form>
-
-        </div>
+        <h2>
+            Let's Make Your Next Event
+            <span>Unforgettable.</span>
+        </h2>
+
+        <p>
+            Planning a wedding, private celebration,
+            corporate event, party or nightlife experience?
+            Connect with DJ Moe D Finest and let's create
+            the perfect soundtrack for your event.
+        </p>
+
+        <!-- EMAIL -->
+        <a href="mailto:djmoe20@yahoo.com"
+           class="btn btn-gold">
+            Request a Booking
+        </a>
+
+        <!-- PHONE -->
+        <a href="tel:+4917661209239"
+           class="btn"
+           style="margin-left:10px;">
+            Call Now
+        </a>
 
     </div>
 
@@ -1787,232 +1138,193 @@
 
 <footer>
 
-    <div class="container">
+    <div class="footer-grid">
 
-        <div class="footer-grid">
+        <!-- BRAND -->
 
+        <div class="footer-column">
 
-            <!-- BRAND -->
+            <div class="footer-logo">
 
-            <div class="footer-column">
-
-                <!-- LOGO ALSO LINKS HOME -->
-
+                <!-- CLICKABLE FOOTER LOGO -->
                 <a href="#home">
 
-                    <img
-                        src="dj moe.png"
-                        alt="DJ Moe D Finest Logo"
-                        class="footer-logo">
+                    <img src="dj moe.png"
+                         alt="DJ Moe D Finest">
 
-                </a>
-
-                <p>
-                    DJ • Producer • Recording Artist
-                </p>
-
-                <p style="margin-top:10px;">
-                    Creating unforgettable soundtracks for weddings,
-                    private events, parties and special occasions.
-                </p>
-
-
-                <div class="footer-social">
-
-                    <a
-                        href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="TikTok">
-                        TT
-                    </a>
-
-                    <a
-                        href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Facebook">
-                        FB
-                    </a>
-
-                    <a
-                        href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Instagram">
-                        IG
-                    </a>
-
-                    <a
-                        href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Spotify">
-                        SP
-                    </a>
-
-                    <a
-                        href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Apple Music">
-                        AM
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- QUICK LINKS -->
-
-            <div class="footer-column">
-
-                <h3>
-                    Quick Links
-                </h3>
-
-                <a href="#home">
-                    Home
-                </a>
-
-                <a href="#about">
-                    About
-                </a>
-
-                <a href="#music">
-                    Music
-                </a>
-
-                <a href="#services">
-                    Services
-                </a>
-
-                <a href="#gallery">
-                    Gallery
-                </a>
-
-                <a href="#events">
-                    Events
-                </a>
-
-                <a href="#booking">
-                    Book Now
                 </a>
 
             </div>
 
+            <p>
+                DJ • Producer • Recording Artist creating
+                unforgettable soundtracks for weddings,
+                private events, parties and special occasions.
+            </p>
 
-            <!-- FOLLOW -->
+            <!-- SOCIAL MEDIA ICONS -->
 
-            <div class="footer-column">
+            <div class="social-icons">
 
-                <h3>
-                    Follow Me
-                </h3>
+                <!-- TikTok -->
+                <a class="tiktok"
+                   href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="TikTok">
 
-                <a
-                    href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
-                    target="_blank"
-                    rel="noopener">
+                    <i class="fa-brands fa-tiktok"></i>
+
+                </a>
+
+                <!-- Facebook -->
+                <a class="facebook"
+                   href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+                <!-- Instagram -->
+                <a class="instagram"
+                   href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <!-- Spotify -->
+                <a class="spotify"
+                   href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Spotify">
+
+                    <i class="fa-brands fa-spotify"></i>
+
+                </a>
+
+                <!-- Apple Music -->
+                <a class="apple"
+                   href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Apple Music">
+
+                    <i class="fa-brands fa-apple"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#music">Music</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#events">Events</a>
+                <a href="#booking">Book Now</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOLLOW -->
+
+        <div class="footer-column">
+
+            <h3>Follow Me</h3>
+
+            <div class="footer-links">
+
+                <a href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
+                   target="_blank">
                     TikTok
                 </a>
 
-                <a
-                    href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
-                    target="_blank"
-                    rel="noopener">
+                <a href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
+                   target="_blank">
                     Facebook
                 </a>
 
-                <a
-                    href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
-                    target="_blank"
-                    rel="noopener">
+                <a href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
+                   target="_blank">
                     Instagram
                 </a>
 
-                <a
-                    href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
-                    target="_blank"
-                    rel="noopener">
+                <a href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
+                   target="_blank">
                     Spotify
                 </a>
 
-                <a
-                    href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
-                    target="_blank"
-                    rel="noopener">
+                <a href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
+                   target="_blank">
                     Apple Music
                 </a>
 
             </div>
 
+        </div>
 
-            <!-- CONTACT -->
 
-            <div class="footer-column">
+        <!-- CONTACT -->
 
-                <h3>
-                    Book DJ Moe D
-                </h3>
+        <div class="footer-column">
 
-                <p>
-                    Weddings, private events, parties, nightlife and
-                    special occasions.
-                </p>
+            <h3>Book DJ Moe D</h3>
 
-                <p style="margin-top:15px;">
+            <div class="contact-info">
 
-                    <strong style="color:#ffd400;">
-                        EMAIL
-                    </strong>
+                <a href="mailto:djmoe20@yahoo.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    &nbsp; djmoe20@yahoo.com
+                </a>
 
-                    <br>
-
-                    <a href="mailto:djmoe20@yahoo.com">
-                        djmoe20@yahoo.com
-                    </a>
-
-                </p>
-
-                <p style="margin-top:10px;">
-
-                    <strong style="color:#ffd400;">
-                        PHONE
-                    </strong>
-
-                    <br>
-
-                    <a href="tel:+4917661209239">
-                        +49 176 61209239
-                    </a>
-
-                </p>
-
-                <a
-                    href="#booking"
-                    class="btn btn-gold"
-                    style="margin-top:20px;">
-                    Book Now
+                <a href="tel:+4917661209239">
+                    <i class="fa-solid fa-phone"></i>
+                    &nbsp; +49 176 61209239
                 </a>
 
             </div>
 
+            <br>
+
+            <a href="mailto:djmoe20@yahoo.com"
+               class="btn btn-gold">
+                Get In Touch
+            </a>
 
         </div>
 
+    </div>
 
-        <div class="copyright">
 
-            <div>
-                © 2026 DJ Moe D Finest. All Rights Reserved.
-            </div>
+    <div class="copyright">
 
-            <div>
-                DJ • PRODUCER • RECORDING ARTIST
-            </div>
+        <div>
+            © 2026 DJ Moe D Finest. All Rights Reserved.
+        </div>
 
+        <div>
+            DJ • Producer • Recording Artist
         </div>
 
     </div>
@@ -2021,46 +1333,34 @@
 
 
 <!-- =========================
-     JAVASCRIPT
+     MOBILE MENU SCRIPT
 ========================= -->
 
 <script>
 
-    /* MOBILE MENU */
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
 
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener('click', function () {
 
-    menuToggle.addEventListener("click", function () {
+        if (nav.style.display === 'flex') {
 
-        navLinks.classList.toggle("active");
+            nav.style.display = 'none';
 
-    });
+        } else {
 
+            nav.style.display = 'flex';
 
-    /* CLOSE MOBILE MENU AFTER CLICKING LINK */
+            nav.style.position = 'absolute';
+            nav.style.top = '90px';
+            nav.style.left = '0';
+            nav.style.right = '0';
+            nav.style.background = '#090a08';
 
-    document.querySelectorAll(".nav-links a").forEach(function(link) {
+            nav.style.padding = '25px';
 
-        link.addEventListener("click", function() {
-
-            navLinks.classList.remove("active");
-
-        });
-
-    });
-
-
-    /* CLOSE MENU WHEN CLICKING OUTSIDE */
-
-    document.addEventListener("click", function(event) {
-
-        if (
-            !navLinks.contains(event.target) &&
-            !menuToggle.contains(event.target)
-        ) {
-
-            navLinks.classList.remove("active");
+            nav.style.flexDirection = 'column';
+            nav.style.alignItems = 'center';
 
         }
 
