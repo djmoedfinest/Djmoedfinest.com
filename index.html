@@ -276,8 +276,6 @@
             align-items: center;
         }
 
-        /* ABOUT PHOTO */
-
         .about-image {
             text-align: center;
             margin-bottom: 20px;
@@ -398,31 +396,33 @@
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
+            gap: 10px;
         }
 
         .gallery-item {
-            height: 220px;
+            height: 260px;
             background: linear-gradient(135deg, #171717, #292929);
-            border: 1px solid rgba(212,175,55,0.25);
+            border: 1px solid rgba(212,175,55,0.35);
 
             display: flex;
             align-items: center;
             justify-content: center;
 
-            color: #777;
             overflow: hidden;
+            cursor: pointer;
         }
 
         .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: 0.4s;
+            display: block;
+
+            transition: transform 0.5s ease;
         }
 
         .gallery-item:hover img {
-            transform: scale(1.05);
+            transform: scale(1.06);
         }
 
 
@@ -533,7 +533,7 @@
 
 
         /* =========================
-           BIG SOCIAL ICONS
+           SOCIAL ICONS
         ========================= */
 
         .social-icons {
@@ -567,40 +567,25 @@
             box-shadow: 0 8px 20px rgba(244,208,63,0.2);
         }
 
-
-        /* TikTok */
-
         .social-icons .tiktok:hover {
             background: #ffffff;
             color: #050607;
         }
-
-
-        /* Spotify */
 
         .social-icons .spotify:hover {
             background: #1DB954;
             color: #ffffff;
         }
 
-
-        /* Facebook */
-
         .social-icons .facebook:hover {
             background: #1877F2;
             color: #ffffff;
         }
 
-
-        /* Instagram */
-
         .social-icons .instagram:hover {
             background: #E4405F;
             color: #ffffff;
         }
-
-
-        /* Apple */
 
         .social-icons .apple:hover {
             background: #ffffff;
@@ -639,7 +624,7 @@
 
 
         /* =========================
-           TABLET / MOBILE
+           TABLET
         ========================= */
 
         @media (max-width: 900px) {
@@ -690,7 +675,6 @@
                 grid-template-columns: 1fr 1fr;
             }
 
-            /* About image on tablet */
             .about-image img {
                 width: 280px;
                 max-width: 80%;
@@ -737,7 +721,7 @@
             }
 
 
-            /* ABOUT PHOTO - MOBILE */
+            /* ABOUT */
 
             .about-image {
                 width: 100%;
@@ -771,10 +755,11 @@
 
             .gallery-grid {
                 grid-template-columns: 1fr 1fr;
+                gap: 8px;
             }
 
             .gallery-item {
-                height: 150px;
+                height: 170px;
             }
 
 
@@ -795,7 +780,7 @@
             }
 
 
-            /* BOOKING BUTTONS */
+            /* BOOKING */
 
             .booking .btn {
                 margin: 5px !important;
@@ -817,8 +802,6 @@
 <header>
 
     <div class="header-inner">
-
-        <!-- CLICK LOGO TO RETURN HOME -->
 
         <a href="#home" class="logo">
 
@@ -848,12 +831,9 @@
             </a>
 
 
-            <!-- HEADER SOCIAL ICONS -->
+            <!-- TIKTOK -->
 
             <div class="header-social">
-
-
-                <!-- TikTok -->
 
                 <a href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
                    target="_blank"
@@ -865,7 +845,7 @@
                 </a>
 
 
-                <!-- Facebook -->
+                <!-- FACEBOOK -->
 
                 <a href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
                    target="_blank"
@@ -877,7 +857,7 @@
                 </a>
 
 
-                <!-- Instagram -->
+                <!-- INSTAGRAM -->
 
                 <a href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
                    target="_blank"
@@ -889,7 +869,7 @@
                 </a>
 
 
-                <!-- Spotify -->
+                <!-- SPOTIFY -->
 
                 <a href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
                    target="_blank"
@@ -901,7 +881,7 @@
                 </a>
 
 
-                <!-- Apple Music -->
+                <!-- APPLE MUSIC -->
 
                 <a href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
                    target="_blank"
@@ -917,7 +897,7 @@
         </nav>
 
 
-        <!-- MOBILE MENU BUTTON -->
+        <!-- MOBILE MENU -->
 
         <div class="menu-toggle">
 
@@ -940,18 +920,13 @@
     <div class="hero-content">
 
         <div class="hero-small">
-
             DJ • Producer • Recording Artist
-
         </div>
 
 
         <h1>
-
             Your Event.<br>
-
             <span>Your Soundtrack.</span>
-
         </h1>
 
 
@@ -966,7 +941,6 @@
 
 
         <div class="hero-buttons">
-
 
             <a href="#booking"
                class="btn btn-gold">
@@ -983,7 +957,6 @@
 
             </a>
 
-
         </div>
 
     </div>
@@ -999,7 +972,6 @@
 <section id="about">
 
     <div class="container">
-
 
         <div class="section-title">
 
@@ -1030,7 +1002,6 @@
             <!-- ABOUT TEXT -->
 
             <div class="about-text">
-
 
                 <h3>
                     DJ Moe D Finest
@@ -1066,7 +1037,6 @@
 
                 </p>
 
-
             </div>
 
         </div>
@@ -1085,7 +1055,6 @@
 
     <div class="container">
 
-
         <div class="section-title">
 
             <h2>Music</h2>
@@ -1100,7 +1069,6 @@
 
 
         <div class="music-box">
-
 
             <h3>
                 Listen. Feel. Experience.
@@ -1145,7 +1113,6 @@
 
                 </a>
 
-
             </div>
 
         </div>
@@ -1163,7 +1130,6 @@
 <section id="services">
 
     <div class="container">
-
 
         <div class="section-title">
 
@@ -1242,7 +1208,6 @@
 
             </div>
 
-
         </div>
 
     </div>
@@ -1275,45 +1240,62 @@
         </div>
 
 
+        <!-- REAL GALLERY PHOTOS -->
+
         <div class="gallery-grid">
 
 
-            <!--
-            Replace these boxes with your own images.
-
-            Example:
-
-            <div class="gallery-item">
-                <img src="gallery1.jpg"
-                     alt="DJ Moe D Finest performing">
-            </div>
-            -->
-
+            <!-- GALLERY PHOTO 1 -->
 
             <div class="gallery-item">
 
-                <i class="fa-solid fa-music"></i>
+                <img src="gallery-1.PNG"
+                     alt="DJ Moe D Finest Gallery Photo 1"
+                     loading="lazy">
 
             </div>
 
 
+            <!-- GALLERY PHOTO 2 -->
+
             <div class="gallery-item">
 
-                <i class="fa-solid fa-compact-disc"></i>
+                <img src="gallery-2.PNG"
+                     alt="DJ Moe D Finest Gallery Photo 2"
+                     loading="lazy">
 
             </div>
 
 
+            <!-- GALLERY PHOTO 3 -->
+
             <div class="gallery-item">
 
-                <i class="fa-solid fa-users"></i>
+                <img src="gallery-3.heic"
+                     alt="DJ Moe D Finest Gallery Photo 3"
+                     loading="lazy">
 
             </div>
 
 
+            <!-- GALLERY PHOTO 4 -->
+
             <div class="gallery-item">
 
-                <i class="fa-solid fa-headphones"></i>
+                <img src="gallery-4.heic"
+                     alt="DJ Moe D Finest Gallery Photo 4"
+                     loading="lazy">
+
+            </div>
+
+
+            <!-- GALLERY PHOTO 5 -->
+
+            <div class="gallery-item">
+
+                <img src="gallery-5.jpg"
+                     alt="DJ Moe D Finest Gallery Photo 5"
+                     loading="lazy">
 
             </div>
 
@@ -1456,16 +1438,12 @@
 
             <div class="footer-logo">
 
-
-                <!-- CLICKABLE FOOTER LOGO -->
-
                 <a href="#home">
 
                     <img src="dj moe.png"
                          alt="DJ Moe D Finest">
 
                 </a>
-
 
             </div>
 
@@ -1479,7 +1457,7 @@
             </p>
 
 
-            <!-- SOCIAL MEDIA ICONS -->
+            <!-- SOCIAL MEDIA -->
 
             <div class="social-icons">
 
@@ -1744,15 +1722,11 @@
 
     menuToggle.addEventListener('click', function () {
 
-
         if (nav.style.display === 'flex') {
-
 
             nav.style.display = 'none';
 
-
         } else {
-
 
             nav.style.display = 'flex';
 
@@ -1771,7 +1745,6 @@
             nav.style.flexDirection = 'column';
 
             nav.style.alignItems = 'center';
-
 
         }
 
