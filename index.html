@@ -1,1330 +1,2827 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>DJ Moe d finest | DJ • Producer • Recording Artist</title>
-
-    <meta name="description" content="Official website of DJ Moe d finest — DJ, Producer and Recording Artist bringing Afrobeats, Afropop, Amapiano and Hip-Hop together with a unique sound and unforgettable energy.">
-
-    <meta name="keywords" content="DJ Moe d finest, DJ Moe, Afrobeats DJ, Amapiano DJ, African DJ, Producer, Recording Artist">
-
-    <meta name="author" content="DJ Moe d finest">
-
-    <meta name="theme-color" content="#050505">
-
-    <style>
-
-        /* =========================================
-           RESET
-        ========================================= */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #050505;
-            color: #ffffff;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-
-        /* =========================================
-           VARIABLES
-        ========================================= */
-
-        :root {
-            --gold: #d4af37;
-            --gold-light: #f4d35e;
-            --dark: #050505;
-            --dark-2: #0c0c0c;
-            --dark-3: #121212;
-            --gray: #a8a8a8;
-            --white: #ffffff;
-        }
-
-
-        /* =========================================
-           SCROLL BAR
-        ========================================= */
-
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #050505;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--gold);
-            border-radius: 10px;
-        }
-
-
-        /* =========================================
-           HEADER
-        ========================================= */
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background: rgba(5, 5, 5, 0.88);
-            backdrop-filter: blur(15px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
-        }
-
-        .navbar {
-            max-width: 1200px;
-            margin: auto;
-            padding: 18px 25px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .brand {
-            color: var(--gold-light);
-            font-size: 20px;
-            font-weight: 800;
-            letter-spacing: 3px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: #ddd;
-            font-size: 14px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--gold-light);
-        }
-
-
-        /* =========================================
-           HERO
-        ========================================= */
-
-        .hero {
-            min-height: 100vh;
-            padding: 150px 25px 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            background:
-                radial-gradient(circle at 50% 35%,
-                rgba(212, 175, 55, 0.15),
-                transparent 35%),
-                linear-gradient(
-                    180deg,
-                    #080808 0%,
-                    #050505 100%
-                );
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            border: 1px solid rgba(212,175,55,0.12);
-            top: 15%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .hero-content {
-            width: 100%;
-            max-width: 1000px;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-logo {
-            width: min(420px, 82vw);
-            margin: 0 auto 35px;
-            filter: drop-shadow(0 0 30px rgba(212,175,55,0.15));
-            animation: logoFloat 5s ease-in-out infinite;
-        }
-
-        @keyframes logoFloat {
-            0%,100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .eyebrow {
-            color: var(--gold-light);
-            font-size: 13px;
-            letter-spacing: 6px;
-            font-weight: 700;
-            margin-bottom: 18px;
-        }
-
-        .hero h1 {
-            font-size: clamp(45px, 8vw, 90px);
-            line-height: 1;
-            margin-bottom: 22px;
-            font-weight: 900;
-            letter-spacing: -3px;
-        }
-
-        .hero h1 span {
-            color: var(--gold-light);
-        }
-
-        .hero-description {
-            max-width: 700px;
-            margin: 0 auto 35px;
-            color: #bcbcbc;
-            font-size: 18px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 190px;
-            padding: 16px 28px;
-            border-radius: 50px;
-            font-weight: 800;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .btn-gold {
-            background: var(--gold-light);
-            color: #050505;
-            box-shadow: 0 10px 35px rgba(212,175,55,0.2);
-        }
-
-        .btn-gold:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 45px rgba(212,175,55,0.35);
-        }
-
-        .btn-outline {
-            border: 1px solid var(--gold);
-            color: white;
-        }
-
-        .btn-outline:hover {
-            background: var(--gold);
-            color: #050505;
-            transform: translateY(-4px);
-        }
-
-
-        /* =========================================
-           SECTION
-        ========================================= */
-
-        section {
-            padding: 110px 25px;
-            position: relative;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .section-heading {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-label {
-            color: var(--gold-light);
-            font-size: 12px;
-            letter-spacing: 5px;
-            font-weight: 800;
-            margin-bottom: 12px;
-        }
-
-        .section-heading h2 {
-            font-size: clamp(38px, 6vw, 60px);
-            line-height: 1.1;
-            margin-bottom: 18px;
-        }
-
-        .section-heading p {
-            max-width: 650px;
-            margin: auto;
-            color: var(--gray);
-            font-size: 17px;
-        }
-
-
-        /* =========================================
-           ABOUT
-        ========================================= */
-
-        .about {
-            background:
-                radial-gradient(
-                    circle at 10% 50%,
-                    rgba(212,175,55,0.08),
-                    transparent 30%
-                ),
-                #090909;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 0.9fr 1.1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .about-card {
-            background: linear-gradient(
-                145deg,
-                #151515,
-                #090909
-            );
-            border: 1px solid rgba(212,175,55,0.25);
-            border-radius: 25px;
-            padding: 35px;
-            box-shadow: 0 25px 80px rgba(0,0,0,0.4);
-        }
-
-        .about-card::before {
-            content: "DJ";
-            display: block;
-            font-size: 100px;
-            line-height: 1;
-            font-weight: 900;
-            color: rgba(212,175,55,0.08);
-            margin-bottom: -40px;
-        }
-
-        .about-card h3 {
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
-
-        .about-card h3 span {
-            color: var(--gold-light);
-        }
-
-        .about-card p {
-            color: #aaa;
-        }
-
-        .about-text h3 {
-            font-size: 38px;
-            margin-bottom: 20px;
-        }
-
-        .about-text h3 span {
-            color: var(--gold-light);
-        }
-
-        .about-text p {
-            color: #b3b3b3;
-            margin-bottom: 20px;
-            font-size: 16px;
-        }
-
-        .about-highlights {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-top: 30px;
-        }
-
-        .highlight {
-            border-left: 2px solid var(--gold);
-            padding: 12px 15px;
-            background: rgba(255,255,255,0.025);
-        }
-
-        .highlight strong {
-            display: block;
-            color: white;
-            font-size: 15px;
-        }
-
-        .highlight span {
-            color: #888;
-            font-size: 13px;
-        }
-
-
-        /* =========================================
-           MUSIC
-        ========================================= */
-
-        .music {
-            background: #050505;
-        }
-
-        .music-box {
-            padding: 55px 35px;
-            border-radius: 28px;
-            text-align: center;
-            border: 1px solid rgba(212,175,55,0.25);
-            background:
-                radial-gradient(
-                    circle at center,
-                    rgba(212,175,55,0.10),
-                    transparent 60%
-                ),
-                #0c0c0c;
-        }
-
-        .music-icon {
-            font-size: 55px;
-            margin-bottom: 20px;
-        }
-
-        .music-box h3 {
-            font-size: 35px;
-            margin-bottom: 15px;
-        }
-
-        .music-box p {
-            color: var(--gray);
-            max-width: 650px;
-            margin: 0 auto 30px;
-        }
-
-        .music-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .music-btn {
-            border: 1px solid #333;
-            padding: 13px 22px;
-            border-radius: 30px;
-            color: white;
-            font-size: 14px;
-            font-weight: 700;
-            transition: 0.3s;
-        }
-
-        .music-btn:hover {
-            border-color: var(--gold);
-            color: var(--gold-light);
-            transform: translateY(-3px);
-        }
-
-
-        /* =========================================
-           GENRES
-        ========================================= */
-
-        .genres {
-            background: #0a0a0a;
-        }
-
-        .genre-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-        }
-
-        .genre {
-            min-height: 170px;
-            display: flex;
-            align-items: flex-end;
-            padding: 25px;
-            border: 1px solid #222;
-            border-radius: 20px;
-            background: linear-gradient(
-                145deg,
-                #151515,
-                #080808
-            );
-            transition: 0.35s;
-        }
-
-        .genre:hover {
-            transform: translateY(-8px);
-            border-color: var(--gold);
-        }
-
-        .genre h3 {
-            font-size: 21px;
-        }
-
-        .genre h3 span {
-            color: var(--gold-light);
-            display: block;
-            font-size: 12px;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
-        }
-
-
-        /* =========================================
-           SOCIAL MEDIA
-        ========================================= */
-
-        .social {
-            text-align: center;
-            background: #050505;
-        }
-
-        .social-grid {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .social-link {
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-            border: 1px solid var(--gold);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #0b0b0b;
-            transition: 0.3s;
-        }
-
-        .social-link svg {
-            width: 30px;
-            height: 30px;
-            fill: white;
-        }
-
-        .social-link:hover {
-            background: var(--gold);
-            transform: translateY(-8px) scale(1.05);
-        }
-
-        .social-link:hover svg {
-            fill: #050505;
-        }
-
-
-        /* =========================================
-           BOOKING
-        ========================================= */
-
-        .booking {
-            background:
-                radial-gradient(
-                    circle at center,
-                    rgba(212,175,55,0.08),
-                    transparent 45%
-                ),
-                #090909;
-        }
-
-        .booking-box {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-            padding: 60px 30px;
-            border: 1px solid rgba(212,175,55,0.25);
-            border-radius: 30px;
-        }
-
-        .booking-box h2 {
-            font-size: clamp(40px, 6vw, 65px);
-            margin-bottom: 18px;
-        }
-
-        .booking-box p {
-            color: #aaa;
-            max-width: 650px;
-            margin: 0 auto 35px;
-        }
-
-        .contact-details {
-            margin: 30px 0;
-        }
-
-        .contact-details a {
-            display: block;
-            color: white;
-            font-size: 18px;
-            margin: 10px;
-            transition: 0.3s;
-        }
-
-        .contact-details a:hover {
-            color: var(--gold-light);
-        }
-
-
-        /* =========================================
-           FOOTER
-        ========================================= */
-
-        footer {
-            border-top: 1px solid rgba(212,175,55,0.15);
-            padding: 45px 25px;
-            text-align: center;
-            background: #030303;
-        }
-
-        .footer-logo {
-            color: var(--gold-light);
-            font-weight: 900;
-            letter-spacing: 4px;
-            margin-bottom: 15px;
-        }
-
-        footer p {
-            color: #666;
-            font-size: 13px;
-        }
-
-
-        /* =========================================
-           MOBILE
-        ========================================= */
-
-        @media (max-width: 850px) {
-
-            .nav-links {
-                display: none;
-            }
-
-            .navbar {
-                justify-content: center;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .genre-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .hero {
-                padding-top: 130px;
-            }
-
-            .hero-description {
-                font-size: 16px;
-            }
-        }
-
-
-        @media (max-width: 550px) {
-
-            section {
-                padding: 80px 18px;
-            }
-
-            .hero {
-                min-height: 100svh;
-                padding: 120px 18px 70px;
-            }
-
-            .hero-logo {
-                width: min(330px, 85vw);
-            }
-
-            .hero h1 {
-                font-size: 47px;
-                letter-spacing: -2px;
-            }
-
-            .hero-description {
-                font-size: 15px;
-            }
-
-            .btn {
-                width: 100%;
-            }
-
-            .about-card {
-                padding: 25px;
-            }
-
-            .about-text h3 {
-                font-size: 32px;
-            }
-
-            .about-highlights {
-                grid-template-columns: 1fr;
-            }
-
-            .genre-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .genre {
-                min-height: 140px;
-                padding: 18px;
-            }
-
-            .genre h3 {
-                font-size: 17px;
-            }
-
-            .music-box {
-                padding: 40px 20px;
-            }
-
-            .social-link {
-                width: 65px;
-                height: 65px;
-            }
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DJ Moe D finest | DJ • Producer • Recording Artist</title>
+
+<meta name="description"
+content="DJ Moe D finest — DJ, Producer and Recording Artist. Weddings, private events, parties and nightlife in Germany and worldwide.">
+
+<meta name="keywords"
+content="DJ Moe D finest, DJ Moe D, DJ Germany, Wedding DJ Germany, Party DJ, Producer, Recording Artist">
+
+<meta name="author" content="DJ Moe D finest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root {
+    --gold: #d6a83c;
+    --gold-light: #f5d477;
+    --gold-dark: #8b681f;
+
+    --black: #030303;
+    --dark: #090909;
+    --card: #111111;
+
+    --white: #ffffff;
+    --gray: #aaaaaa;
+
+    --border: rgba(214,168,60,0.25);
+
+    --max-width: 1250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(214,168,60,0.07),
+            transparent 35%
+        ),
+        #030303;
+
+    color: #fff;
+
+    font-family: 'Inter', sans-serif;
+
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.015) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.015) 1px,
+            transparent 1px
+        );
+
+    background-size: 50px 50px;
+
+    opacity: .25;
+
+    z-index: -1;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: min(92%, var(--max-width));
+    margin: auto;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 9999;
+
+    background: rgba(0,0,0,.88);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(214,168,60,.18);
+}
+
+.navbar {
+    min-height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.site-logo {
+    width: 185px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* NAV */
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 27px;
+}
+
+nav a {
+    position: relative;
+
+    color: #ddd;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--gold);
+}
+
+nav a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -12px;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: var(--gold);
+}
+
+
+/* SOCIAL */
+
+.socials {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.social {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 50%;
+
+    color: var(--gold);
+
+    font-size: 12px;
+
+    transition: .3s;
+}
+
+.social:hover {
+    background: var(--gold);
+
+    color: #000;
+
+    transform: translateY(-2px);
+}
+
+
+/* MOBILE BUTTON */
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: #fff;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 760px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 90px;
+
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.98) 0%,
+            rgba(0,0,0,.88) 35%,
+            rgba(0,0,0,.35) 70%,
+            rgba(0,0,0,.75) 100%
+        ),
+        url("https://images.unsplash.com/photo-1571266028243-d220c9c3b7c6?auto=format&fit=crop&w=2000&q=90");
+
+    background-size: cover;
+
+    background-position: center;
+
+    z-index: -2;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(214,168,60,.13),
+            transparent 28%
+        ),
+        linear-gradient(
+            to bottom,
+            transparent 70%,
+            #030303 100%
+        );
+
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 650px;
+
+    padding-top: 35px;
+}
+
+.hero-logo {
+    width: 330px;
+
+    margin-bottom: 22px;
+
+    display: none;
+}
+
+.hero-tag {
+    font-size: 14px;
+
+    color: #eee;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: clamp(85px, 12vw, 155px);
+
+    line-height: .78;
+
+    letter-spacing: 4px;
+
+    color: var(--gold);
+
+    text-shadow:
+        0 5px 30px rgba(0,0,0,.6);
+}
+
+.hero-script {
+    font-family: 'Playfair Display', serif;
+
+    font-style: italic;
+
+    font-size: clamp(50px, 7vw, 85px);
+
+    margin-left: 80px;
+
+    margin-top: -4px;
+
+    color: #fff;
+}
+
+.hero-line {
+    margin-top: 28px;
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.hero-line span {
+    color: var(--gold);
+}
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 32px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    padding: 15px 26px;
+
+    border: 1px solid var(--gold);
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: .3s;
+}
+
+.btn-primary {
+    background: var(--gold);
+
+    color: #050505;
+}
+
+.btn-primary:hover {
+    background: var(--gold-light);
+
+    transform: translateY(-3px);
+}
+
+.btn-outline:hover {
+    background: var(--gold);
+
+    color: #000;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+section {
+    padding: 80px 0;
+
+    border-top: 1px solid rgba(214,168,60,.16);
+}
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+}
+
+.section-heading::before,
+.section-heading::after {
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--gold-dark)
+        );
+}
+
+.section-heading::after {
+    background:
+        linear-gradient(
+            90deg,
+            var(--gold-dark),
+            transparent
+        );
+}
+
+.section-heading h2 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    color: var(--gold);
+
+    font-size: 36px;
+
+    letter-spacing: 2px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-image {
+    min-height: 480px;
+
+    border: 1px solid rgba(214,168,60,.35);
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.15),
+            rgba(0,0,0,.3)
+        ),
+        url("https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1000&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+}
+
+.about-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 12px;
+
+    border: 1px solid rgba(214,168,60,.4);
+}
+
+.about-text .eyebrow {
+    color: var(--gold);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.about-text h2 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 55px;
+
+    line-height: .95;
+
+    margin: 12px 0 25px;
+}
+
+.about-text h2 span {
+    color: var(--gold);
+}
+
+.about-text p {
+    color: #aaa;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 17px;
+}
+
+
+/* =========================================================
+   EVENTS
+========================================================= */
+
+.events-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+}
+
+.event-column {
+    padding-right: 40px;
+
+    border-right: 1px solid rgba(214,168,60,.2);
+}
+
+.event-column:last-child {
+    padding-right: 0;
+
+    border-right: none;
+}
+
+.event {
+    display: grid;
+
+    grid-template-columns: 60px 75px 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.09);
+}
+
+.event-date {
+    text-align: center;
+
+    color: var(--gold);
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 28px;
+}
+
+.event-date small {
+    display: block;
+
+    color: #aaa;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+.event-image {
+    width: 75px;
+
+    height: 55px;
+
+    background:
+        url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=500&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid rgba(214,168,60,.3);
+}
+
+.event-info h3 {
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.event-info p {
+    color: #999;
+
+    font-size: 10px;
+
+    margin-top: 5px;
+}
+
+.read-more {
+    display: inline-block;
+
+    color: var(--gold);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    margin-top: 6px;
+
+    text-transform: uppercase;
+}
+
+
+/* UPCOMING */
+
+.upcoming .event {
+    grid-template-columns: 60px 1fr auto;
+}
+
+.date-box {
+    border: 1px solid rgba(214,168,60,.4);
+
+    text-align: center;
+
+    padding: 7px;
+}
+
+.date-box strong {
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 20px;
+}
+
+.date-box small {
+    font-size: 9px;
+
+    color: #aaa;
+}
+
+.book-link {
+    color: var(--gold);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MUSIC
+========================================================= */
+
+.music-section {
+    background:
+        linear-gradient(
+            rgba(0,0,0,.88),
+            rgba(0,0,0,.96)
+        ),
+        url("https://images.unsplash.com/photo-1598387993281-cecf8b71a8f8?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.music-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+}
+
+.music-card {
+    min-height: 150px;
+
+    padding: 20px;
+
+    border: 1px solid rgba(214,168,60,.25);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.06),
+            rgba(255,255,255,.015)
+        );
+
+    transition: .3s;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--gold);
+}
+
+.music-icon {
+    font-size: 27px;
+
+    margin-bottom: 12px;
+}
+
+.music-card h3 {
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.music-card p {
+    color: #777;
+
+    font-size: 9px;
+
+    margin-top: 4px;
+}
+
+.wave {
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 3px;
+
+    margin-top: 15px;
+}
+
+.wave span {
+    width: 3px;
+
+    display: block;
+
+    border-radius: 2px;
+
+    background: var(--gold);
+
+    opacity: .65;
+}
+
+.wave span:nth-child(1) {height:12px}
+.wave span:nth-child(2) {height:25px}
+.wave span:nth-child(3) {height:18px}
+.wave span:nth-child(4) {height:31px}
+.wave span:nth-child(5) {height:14px}
+.wave span:nth-child(6) {height:28px}
+.wave span:nth-child(7) {height:20px}
+.wave span:nth-child(8) {height:34px}
+.wave span:nth-child(9) {height:15px}
+.wave span:nth-child(10) {height:27px}
+.wave span:nth-child(11) {height:18px}
+.wave span:nth-child(12) {height:30px}
+
+
+/* AUDIO PLAYER */
+
+.audio-player {
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.play-button {
+    width: 52px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    border: 1px solid var(--gold);
+
+    background: transparent;
+
+    color: var(--gold);
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.audio-player audio {
+    width: 100%;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service {
+    padding: 30px;
+
+    text-align: center;
+
+    border-right: 1px solid rgba(214,168,60,.18);
+}
+
+.service:last-child {
+    border-right: none;
+}
+
+.service-icon {
+    font-size: 40px;
+
+    color: var(--gold);
+
+    margin-bottom: 18px;
+}
+
+.service h3 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    color: var(--gold);
+
+    font-size: 25px;
+
+    letter-spacing: 1px;
+}
+
+.service p {
+    color: #999;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 8px;
+}
+
+.gallery-item {
+    height: 190px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(214,168,60,.18);
+}
+
+.gallery-item img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-item::after {
+    content: "VIEW";
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(0,0,0,.55);
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    opacity: 0;
+
+    transition: .3s;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   BOOKING
+========================================================= */
+
+.booking {
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(214,168,60,.13),
+            transparent 55%
+        );
+}
+
+.booking h2 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: clamp(45px, 6vw, 70px);
+
+    letter-spacing: 2px;
+}
+
+.booking p {
+    max-width: 700px;
+
+    margin: 17px auto 30px;
+
+    color: #aaa;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 65px 0 25px;
+
+    background: #020202;
+
+    border-top: 1px solid rgba(214,168,60,.3);
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr
+        1.3fr;
+
+    gap: 40px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo .site-logo {
+    width: 210px;
+}
+
+.footer-column h3 {
+    color: var(--gold);
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 20px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 18px;
+}
+
+.footer-column p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+.footer-column a {
+    display: block;
+
+    color: #999;
+
+    font-size: 12px;
+
+    margin: 10px 0;
+
+    transition: .3s;
+}
+
+.footer-column a:hover {
+    color: var(--gold);
+}
+
+.footer-column .btn {
+    display: inline-flex;
+
+    color: #000;
+
+    margin-top: 5px;
+}
+
+.footer-bottom {
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1100px) {
+
+    nav {
+        gap: 15px;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .music-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media(max-width:760px) {
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .site-logo {
+        width: 155px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        background: rgba(0,0,0,.98);
+
+        border-bottom: 1px solid rgba(214,168,60,.2);
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+
+        padding: 12px 0;
+    }
+
+    nav a.active::after {
+        display: none;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero::before {
+        background-position: 68% center;
+    }
+
+    .hero-content {
+        padding-top: 70px;
+    }
+
+    .hero h1 {
+        font-size: 82px;
+    }
+
+    .hero-script {
+        font-size: 52px;
+
+        margin-left: 35px;
+    }
+
+    .hero-line {
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .btn {
+        min-width: 210px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .event-column {
+        border-right: none;
+
+        padding-right: 0;
+    }
+
+    .music-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        border-right: none;
+
+        border-bottom: 1px solid rgba(214,168,60,.15);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .about-image {
+        min-height: 360px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-item {
+        height: 155px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+}
+
+
+@media(max-width:480px) {
+
+    .site-logo {
+        width: 140px;
+    }
+
+    .hero h1 {
+        font-size: 67px;
+    }
+
+    .hero-script {
+        font-size: 44px;
+
+        margin-left: 20px;
+    }
+
+    .music-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking h2 {
+        font-size: 45px;
+    }
+
+}
+
+</style>
 </head>
 
 
 <body>
 
 
-<!-- =========================================
+<!-- =========================================================
      HEADER
-========================================= -->
+========================================================= -->
 
 <header>
 
-    <nav class="navbar">
+<div class="container navbar">
 
-        <a href="#home" class="brand">
-            DJ MOE D FINEST
-        </a>
 
-        <ul class="nav-links">
+<a href="#home" class="logo">
 
-            <li>
-                <a href="#home">HOME</a>
-            </li>
+<img
+    src="dj moe.png"
+    alt="DJ Moe D finest"
+    class="site-logo"
+>
 
-            <li>
-                <a href="#about">ABOUT</a>
-            </li>
+</a>
 
-            <li>
-                <a href="#music">MUSIC</a>
-            </li>
 
-            <li>
-                <a href="#social">SOCIAL</a>
-            </li>
+<button
+    class="menu-toggle"
+    id="menuToggle"
+    aria-label="Open menu">
 
-            <li>
-                <a href="#booking">BOOKINGS</a>
-            </li>
+☰
 
-        </ul>
+</button>
 
-    </nav>
+
+<nav id="navigation">
+
+<a href="#home" class="active">
+Home
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#music">
+Music
+</a>
+
+<a href="#services">
+Services
+</a>
+
+<a href="#gallery">
+Gallery
+</a>
+
+<a href="#events">
+Events
+</a>
+
+<a href="#booking">
+Book Now
+</a>
+
+
+<div class="socials">
+
+<a
+    href="#"
+    class="social"
+    aria-label="Facebook">
+    f
+</a>
+
+<a
+    href="#"
+    class="social"
+    aria-label="Instagram">
+    ◎
+</a>
+
+<a
+    href="#"
+    class="social"
+    aria-label="YouTube">
+    ▶
+</a>
+
+<a
+    href="#"
+    class="social"
+    aria-label="SoundCloud">
+    ☁
+</a>
+
+</div>
+
+</nav>
+
+</div>
 
 </header>
 
 
 
-<!-- =========================================
+<!-- =========================================================
      HERO
-========================================= -->
+========================================================= -->
 
-<section class="hero" id="home">
+<section
+    class="hero"
+    id="home">
 
-    <div class="hero-content">
+<div class="container">
 
-        <!-- YOUR LOGO -->
-        <img
-            src="logo.png"
-            alt="DJ Moe d finest Logo"
-            class="hero-logo"
-        >
+<div class="hero-content reveal">
 
-        <div class="eyebrow">
-            OFFICIAL WEBSITE
-        </div>
 
-        <h1>
-            DJ Moe d <span>finest</span>
-        </h1>
+<div class="hero-tag">
+DJ • PRODUCER • RECORDING ARTIST
+</div>
 
-        <p class="hero-description">
-            DJ • Producer • Recording Artist
-            <br>
-            Bringing rhythm, energy and African sound together.
-        </p>
 
-        <div class="hero-buttons">
+<h1>
+DJ MOE D
+</h1>
 
-            <a
-                href="#music"
-                class="btn btn-gold"
-            >
-                🎵 LISTEN TO MY MUSIC
-            </a>
 
-            <a
-                href="#booking"
-                class="btn btn-outline"
-            >
-                📩 BOOK ME
-            </a>
+<div class="hero-script">
+finest
+</div>
 
-        </div>
 
-    </div>
+<div class="hero-line">
+
+THE SOUND.
+THE ENERGY.
+THE <span>EXPERIENCE.</span>
+
+</div>
+
+
+<div class="hero-buttons">
+
+<a
+    href="#booking"
+    class="btn btn-primary">
+
+BOOK DJ MOE D
+→
+
+</a>
+
+
+<a
+    href="#music"
+    class="btn btn-outline">
+
+LISTEN TO MUSIC
+♫
+
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- =========================================
-     ABOUT YOU
-========================================= -->
+<!-- =========================================================
+     ABOUT
+========================================================= -->
 
-<section class="about" id="about">
+<section id="about">
 
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="section-label">
-                GET TO KNOW ME
-            </div>
-
-            <h2>
-                About Me
-            </h2>
-
-            <p>
-                The sound, the journey and the passion behind DJ Moe d finest.
-            </p>
-
-        </div>
+<div class="container">
 
 
-        <div class="about-grid">
+<div class="section-heading">
+
+<h2>
+ABOUT DJ MOE D
+</h2>
+
+</div>
 
 
-            <div class="about-card">
-
-                <h3>
-                    DJ Moe d <span>finest</span>
-                </h3>
-
-                <p>
-                    DJ • Producer • Recording Artist
-                </p>
-
-                <br>
-
-                <p>
-                    Music is more than sound. It is energy, emotion,
-                    culture and connection.
-                </p>
-
-            </div>
+<div class="about-grid reveal">
 
 
-
-            <div class="about-text">
-
-                <h3>
-                    More Than A DJ.
-                    <span>It's A Vibe.</span>
-                </h3>
-
-                <p>
-                    DJ Moe d finest is a DJ, producer and recording artist
-                    driven by a genuine love for music and the energy it
-                    creates between people. With a passion for African
-                    sounds and modern urban music, his style moves freely
-                    between Afrobeats, Afropop, Amapiano and Hip-Hop.
-                </p>
-
-                <p>
-                    From the DJ booth to the recording studio, the goal is
-                    always the same — create music that people can feel.
-                    Every set, production and release is built around
-                    rhythm, energy and unforgettable moments.
-                </p>
-
-                <p>
-                    DJ Moe d finest represents a sound that connects
-                    different cultures and generations. Whether it is a
-                    high-energy party, a club night, a private event or
-                    an original recording, the focus remains on creating
-                    an atmosphere that keeps people moving.
-                </p>
-
-                <p>
-                    This website is the official home for the latest music,
-                    projects, bookings, collaborations and everything
-                    connected to the DJ Moe d finest journey.
-                </p>
+<div class="about-image"></div>
 
 
-                <div class="about-highlights">
-
-                    <div class="highlight">
-
-                        <strong>
-                            DJ
-                        </strong>
-
-                        <span>
-                            Events • Clubs • Parties
-                        </span>
-
-                    </div>
+<div class="about-text">
 
 
-                    <div class="highlight">
-
-                        <strong>
-                            PRODUCER
-                        </strong>
-
-                        <span>
-                            Beats • Production • Sound
-                        </span>
-
-                    </div>
+<div class="eyebrow">
+DJ • PRODUCER • RECORDING ARTIST
+</div>
 
 
-                    <div class="highlight">
+<h2>
 
-                        <strong>
-                            RECORDING ARTIST
-                        </strong>
+MUSIC IS A
+<span>CONVERSATION</span>
+WITH THE ROOM.
 
-                        <span>
-                            Original Music • Releases
-                        </span>
-
-                    </div>
+</h2>
 
 
-                    <div class="highlight">
+<p>
+DJ Moe D finest is more than a DJ. He is a curator
+of sound, energy and unforgettable moments.
+</p>
 
-                        <strong>
-                            MUSIC & CULTURE
-                        </strong>
 
-                        <span>
-                            Afrobeats • Amapiano • Hip-Hop
-                        </span>
+<p>
+From weddings and private celebrations to parties,
+nightlife and special events, every set is built around
+the people in the room.
+</p>
 
-                    </div>
 
-                </div>
+<p>
+Reading the crowd, understanding the moment and choosing
+the right song at the right time is what makes every
+DJ Moe D finest experience different.
+</p>
 
-            </div>
 
-        </div>
+<p>
+From Hip-Hop and R&B to Afrobeats, Amapiano, Dancehall,
+House and timeless classics, the music always follows
+the energy of the room.
+</p>
 
-    </div>
+
+<a
+    href="#booking"
+    class="btn btn-outline">
+
+WORK WITH DJ MOE D
+→
+
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- =========================================
+<!-- =========================================================
+     EVENTS
+========================================================= -->
+
+<section id="events">
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<h2>
+NEWS & EVENTS
+</h2>
+
+</div>
+
+
+<div class="events-grid reveal">
+
+
+<!-- NEWS -->
+
+<div class="event-column">
+
+
+<div class="event">
+
+<div class="event-date">
+
+21
+
+<small>
+JUN
+</small>
+
+</div>
+
+
+<div class="event-image"></div>
+
+
+<div class="event-info">
+
+<h3>
+DJ MOE D FINEST
+</h3>
+
+<p>
+Live at Zurich, Switzerland
+</p>
+
+<a
+    href="#"
+    class="read-more">
+
+READ MORE →
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="event">
+
+<div class="event-date">
+
+28
+
+<small>
+JUN
+</small>
+
+</div>
+
+
+<div class="event-image"></div>
+
+
+<div class="event-info">
+
+<h3>
+PRIVATE EVENT
+</h3>
+
+<p>
+Munich, Germany
+</p>
+
+<a
+    href="#"
+    class="read-more">
+
+READ MORE →
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="event">
+
+<div class="event-date">
+
+05
+
+<small>
+JUL
+</small>
+
+</div>
+
+
+<div class="event-image"></div>
+
+
+<div class="event-info">
+
+<h3>
+SUMMER PARTY
+</h3>
+
+<p>
+Berlin, Germany
+</p>
+
+<a
+    href="#"
+    class="read-more">
+
+READ MORE →
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- UPCOMING EVENTS -->
+
+<div class="event-column upcoming">
+
+
+<div class="event">
+
+<div class="date-box">
+
+<strong>
+21
+</strong>
+
+<small>
+JUN
+</small>
+
+</div>
+
+
+<div class="event-info">
+
+<h3>
+WEDDING CELEBRATION
+</h3>
+
+<p>
+ZURICH, SWITZERLAND
+</p>
+
+</div>
+
+
+<a
+    href="#booking"
+    class="book-link">
+
+BOOK NOW
+
+</a>
+
+</div>
+
+
+<div class="event">
+
+<div class="date-box">
+
+<strong>
+28
+</strong>
+
+<small>
+JUN
+</small>
+
+</div>
+
+
+<div class="event-info">
+
+<h3>
+PRIVATE EVENT
+</h3>
+
+<p>
+MUNICH, GERMANY
+</p>
+
+</div>
+
+
+<a
+    href="#booking"
+    class="book-link">
+
+BOOK NOW
+
+</a>
+
+</div>
+
+
+<div class="event">
+
+<div class="date-box">
+
+<strong>
+05
+</strong>
+
+<small>
+JUL
+</small>
+
+</div>
+
+
+<div class="event-info">
+
+<h3>
+SUMMER PARTY
+</h3>
+
+<p>
+BERLIN, GERMANY
+</p>
+
+</div>
+
+
+<a
+    href="#booking"
+    class="book-link">
+
+BOOK NOW
+
+</a>
+
+</div>
+
+
+<div class="event">
+
+<div class="date-box">
+
+<strong>
+12
+</strong>
+
+<small>
+JUL
+</small>
+
+</div>
+
+
+<div class="event-info">
+
+<h3>
+NIGHT OF VIBES
+</h3>
+
+<p>
+STUTTGART, GERMANY
+</p>
+
+</div>
+
+
+<a
+    href="#booking"
+    class="book-link">
+
+BOOK NOW
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
      MUSIC
-========================================= -->
+========================================================= -->
 
-<section class="music" id="music">
+<section
+    id="music"
+    class="music-section">
 
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="section-label">
-                MY SOUND
-            </div>
-
-            <h2>
-                Listen To My Music
-            </h2>
-
-            <p>
-                Discover the latest releases, original records and
-                sounds from DJ Moe d finest.
-            </p>
-
-        </div>
+<div class="container">
 
 
-        <div class="music-box">
+<div class="section-heading">
 
-            <div class="music-icon">
-                🎧
-            </div>
+<h2>
+LISTEN TO MUSIC
+</h2>
 
-            <h3>
-                Turn Up The Sound
-            </h3>
-
-            <p>
-                Follow the journey and listen to my music across
-                your favourite streaming platforms.
-            </p>
+</div>
 
 
-            <div class="music-buttons">
+<div class="music-grid reveal">
 
-                <!-- CHANGE THESE LINKS TO YOUR REAL LINKS -->
 
-                <a
-                    href="https://open.spotify.com/"
-                    target="_blank"
-                    class="music-btn"
-                >
-                    Spotify
-                </a>
+<div class="music-card">
 
-                <a
-                    href="https://music.apple.com/"
-                    target="_blank"
-                    class="music-btn"
-                >
-                    Apple Music
-                </a>
+<div class="music-icon">
+🎧
+</div>
 
-                <a
-                    href="https://www.youtube.com/"
-                    target="_blank"
-                    class="music-btn"
-                >
-                    YouTube
-                </a>
+<h3>
+LATEST MIX
+</h3>
 
-                <a
-                    href="https://soundcloud.com/"
-                    target="_blank"
-                    class="music-btn"
-                >
-                    SoundCloud
-                </a>
+<p>
+DJ MOE D FINEST
+</p>
 
-            </div>
+<div class="wave">
 
-        </div>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
 
-    </div>
+</div>
+
+</div>
+
+
+<div class="music-card">
+
+<div class="music-icon">
+🟢
+</div>
+
+<h3>
+SPOTIFY
+</h3>
+
+<p>
+DJ MOE D FINEST
+</p>
+
+<div class="wave">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+
+<div class="music-card">
+
+<div class="music-icon">
+🎵
+</div>
+
+<h3>
+APPLE MUSIC
+</h3>
+
+<p>
+DJ MOE D FINEST
+</p>
+
+<div class="wave">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+
+<div class="music-card">
+
+<div class="music-icon">
+▶️
+</div>
+
+<h3>
+YOUTUBE
+</h3>
+
+<p>
+DJ MOE D FINEST
+</p>
+
+<div class="wave">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+
+<div class="music-card">
+
+<div class="music-icon">
+☁️
+</div>
+
+<h3>
+SOUNDCLOUD
+</h3>
+
+<p>
+DJ MOE D FINEST
+</p>
+
+<div class="wave">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="audio-player">
+
+
+<button
+    class="play-button"
+    id="playButton">
+
+▶
+
+</button>
+
+
+<audio
+    id="audioPlayer"
+    controls>
+
+<source
+    src="music/latest-mix.mp3"
+    type="audio/mpeg">
+
+Your browser does not support audio.
+
+</audio>
+
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- =========================================
-     MUSIC GENRES
-========================================= -->
+<!-- =========================================================
+     SERVICES
+========================================================= -->
 
-<section class="genres">
+<section id="services">
 
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="section-label">
-                THE SOUND
-            </div>
-
-            <h2>
-                My Music
-            </h2>
-
-            <p>
-                Different sounds. One identity. Pure energy.
-            </p>
-
-        </div>
+<div class="container">
 
 
-        <div class="genre-grid">
+<div class="section-heading">
+
+<h2>
+WHAT I DO
+</h2>
+
+</div>
 
 
-            <div class="genre">
-
-                <h3>
-                    <span>01</span>
-                    Afrobeats
-                </h3>
-
-            </div>
+<div class="services-grid reveal">
 
 
-            <div class="genre">
+<div class="service">
 
-                <h3>
-                    <span>02</span>
-                    Afropop
-                </h3>
+<div class="service-icon">
+🎧
+</div>
 
-            </div>
+<h3>
+WEDDINGS
+</h3>
 
+<p>
+Elegant sound. Perfect timing.
+Unforgettable memories. From the ceremony
+and cocktail hour to the final dance,
+every moment gets the right soundtrack.
+</p>
 
-            <div class="genre">
-
-                <h3>
-                    <span>03</span>
-                    Amapiano
-                </h3>
-
-            </div>
-
-
-            <div class="genre">
-
-                <h3>
-                    <span>04</span>
-                    Hip-Hop
-                </h3>
-
-            </div>
+</div>
 
 
-        </div>
+<div class="service">
 
-    </div>
+<div class="service-icon">
+👥
+</div>
+
+<h3>
+PRIVATE EVENTS
+</h3>
+
+<p>
+Personalized music and energy built around
+your celebration. Birthdays, anniversaries,
+corporate events and special occasions.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🔊
+</div>
+
+<h3>
+PARTIES & NIGHTLIFE
+</h3>
+
+<p>
+From the first track to the final song,
+keeping the room alive with powerful music,
+smooth transitions and the right energy.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- =========================================
-     SOCIAL MEDIA
-========================================= -->
+<!-- =========================================================
+     GALLERY
+========================================================= -->
 
-<section class="social" id="social">
+<section id="gallery">
 
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="section-label">
-                STAY CONNECTED
-            </div>
-
-            <h2>
-                Follow Me
-            </h2>
-
-            <p>
-                Follow DJ Moe d finest for new music, DJ sets,
-                performances, behind-the-scenes moments and updates.
-            </p>
-
-        </div>
+<div class="container">
 
 
-        <div class="social-grid">
+<div class="section-heading">
+
+<h2>
+GALLERY
+</h2>
+
+</div>
 
 
-            <!-- INSTAGRAM -->
-
-            <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="social-link"
-                aria-label="Instagram"
-            >
-
-                <svg viewBox="0 0 24 24">
-
-                    <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6zm8.9 1.5a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
-
-                </svg>
-
-            </a>
+<div class="gallery-grid reveal">
 
 
+<div class="gallery-item">
 
-            <!-- TIKTOK -->
+<img
+src="https://images.unsplash.com/photo-1571266028243-d220c9c3b7c6?auto=format&fit=crop&w=800&q=85"
+alt="DJ performing">
 
-            <a
-                href="https://www.tiktok.com/"
-                target="_blank"
-                class="social-link"
-                aria-label="TikTok"
-            >
-
-                <svg viewBox="0 0 24 24">
-
-                    <path d="M19.3 7.1a5.8 5.8 0 0 1-3.5-1.2v7.4a5.7 5.7 0 1 1-4.9-5.6v2.9a2.8 2.8 0 1 0 2 2.7V2h2.9c.2 1.6 1.5 2.9 3.5 3.1v2z"/>
-
-                </svg>
-
-            </a>
+</div>
 
 
+<div class="gallery-item">
 
-            <!-- SPOTIFY -->
+<img
+src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=85"
+alt="Live music crowd">
 
-            <a
-                href="https://open.spotify.com/"
-                target="_blank"
-                class="social-link"
-                aria-label="Spotify"
-            >
-
-                <svg viewBox="0 0 24 24">
-
-                    <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.6 14.5a.8.8 0 0 1-1.1.2c-3-1.8-6.8-2.2-11.2-1.2a.8.8 0 1 1-.4-1.5c4.9-1.1 9.1-.7 12.5 1.3.4.2.5.7.2 1.2zm1.5-3a1 1 0 0 1-1.3.3c-3.4-2.1-8.5-2.7-12.5-1.4a1 1 0 1 1-.6-1.9c4.6-1.4 10.3-.7 14.1 1.6.5.3.7.9.3 1.4zm.1-3.2C14.1 7.9 7.3 7.6 3.3 8.9a1.2 1.2 0 1 1-.7-2.3c4.7-1.4 12.5-1.1 17.1 1.6a1.2 1.2 0 0 1-1.5 2.1z"/>
-
-                </svg>
-
-            </a>
+</div>
 
 
+<div class="gallery-item">
 
-            <!-- YOUTUBE -->
+<img
+src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=85"
+alt="Nightlife crowd">
 
-            <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                class="social-link"
-                aria-label="YouTube"
-            >
-
-                <svg viewBox="0 0 24 24">
-
-                    <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.8V8.2l6.4 3.8-6.4 3.8z"/>
-
-                </svg>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
+</div>
 
 
+<div class="gallery-item">
 
-<!-- =========================================
-     BOOKINGS
-========================================= -->
+<img
+src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85"
+alt="Concert">
 
-<section class="booking" id="booking">
-
-    <div class="container">
-
-        <div class="booking-box">
-
-            <div class="section-label">
-                LET'S WORK TOGETHER
-            </div>
-
-            <h2>
-                Book DJ Moe d finest
-            </h2>
-
-            <p>
-                Looking for the right sound and energy for your next
-                event? Whether it is a club night, private party,
-                birthday, wedding, corporate event or special
-                celebration, DJ Moe d finest is ready to bring the
-                music and atmosphere to the next level.
-            </p>
+</div>
 
 
-            <div class="contact-details">
+<div class="gallery-item">
 
-                <a href="mailto:Djmoe20@yahoo.com">
-                    📧 Djmoe20@yahoo.com
-                </a>
+<img
+src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=85"
+alt="Party">
 
-                <a href="tel:+4917661209239">
-                    📞 +49 176 61209239
-                </a>
-
-            </div>
+</div>
 
 
-            <a
-                href="mailto:Djmoe20@yahoo.com?subject=Booking Request - DJ Moe d finest"
-                class="btn btn-gold"
-            >
-                SEND BOOKING REQUEST
-            </a>
+<div class="gallery-item">
 
-        </div>
+<img
+src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=800&q=85"
+alt="DJ equipment">
 
-    </div>
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=800&q=85"
+alt="DJ stage">
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=85"
+alt="Audience">
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85"
+alt="Event">
+
+</div>
+
+
+<div class="gallery-item">
+
+<img
+src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=85"
+alt="Party crowd">
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- =========================================
+<!-- =========================================================
+     BOOKING
+========================================================= -->
+
+<section
+    id="booking"
+    class="booking">
+
+<div class="container reveal">
+
+
+<h2>
+
+LET'S MAKE YOUR NEXT EVENT
+<span class="gold">
+UNFORGETTABLE.
+</span>
+
+</h2>
+
+
+<p>
+Planning a wedding, private celebration, corporate event,
+party or nightlife experience? Tell DJ Moe D finest about
+your event and let's create the perfect soundtrack for it.
+</p>
+
+
+<a
+    href="mailto:djmoedfinest@gmail.com?subject=DJ Moe D Booking Request"
+    class="btn btn-primary">
+
+BOOK DJ MOE D
+→
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
      FOOTER
-========================================= -->
+========================================================= -->
 
 <footer>
 
-    <div class="footer-logo">
-        DJ MOE D FINEST
-    </div>
+<div class="container">
 
-    <p>
-        DJ • Producer • Recording Artist
-    </p>
 
-    <br>
+<div class="footer-grid">
 
-    <p>
-        © 2026 DJ Moe d finest. All Rights Reserved.
-    </p>
+
+<!-- BRAND -->
+
+<div class="footer-column">
+
+
+<div class="footer-logo">
+
+<img
+    src="dj moe.png"
+    alt="DJ Moe D finest"
+    class="site-logo">
+
+</div>
+
+
+<p>
+Bringing people together through music.
+Every event is different.
+The experience is always unforgettable.
+</p>
+
+</div>
+
+
+<!-- QUICK LINKS -->
+
+<div class="footer-column">
+
+<h3>
+QUICK LINKS
+</h3>
+
+<a href="#home">
+Home
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#music">
+Music
+</a>
+
+<a href="#services">
+Services
+</a>
+
+<a href="#gallery">
+Gallery
+</a>
+
+<a href="#events">
+Events
+</a>
+
+<a href="#booking">
+Book Now
+</a>
+
+</div>
+
+
+<!-- MUSIC -->
+
+<div class="footer-column">
+
+<h3>
+MUSIC
+</h3>
+
+<a href="#">
+Spotify
+</a>
+
+<a href="#">
+Apple Music
+</a>
+
+<a href="#">
+YouTube
+</a>
+
+<a href="#">
+SoundCloud
+</a>
+
+<a href="#">
+Mixcloud
+</a>
+
+</div>
+
+
+<!-- SOCIAL -->
+
+<div class="footer-column">
+
+<h3>
+FOLLOW ME
+</h3>
+
+<a href="#">
+Facebook
+</a>
+
+<a href="#">
+Instagram
+</a>
+
+<a href="#">
+YouTube
+</a>
+
+<a href="#">
+SoundCloud
+</a>
+
+<a href="#">
+TikTok
+</a>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="footer-column">
+
+<h3>
+CONTACT / BOOKING
+</h3>
+
+
+<p>
+Let's make your next event unforgettable.
+</p>
+
+
+<a href="djmoe20@yahoo.com">
+
+✉ djmoe20@yahoo.com
+
+</a>
+
+
+<a href="tel:+4917661209239">
+
+☎ +49 152 12345678
+
+</a>
+
+
+<a href="#">
+
+📍 Germany | Available Worldwide
+
+</a>
+
+
+<a
+    href="mailto:djmoe20@yahoo.com?subject=DJ Moe D Booking Request"
+    class="btn btn-primary">
+
+BOOK NOW
+→
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- FOOTER BOTTOM -->
+
+<div class="footer-bottom">
+
+<div>
+© 2026 DJ MOE D FINEST. ALL RIGHTS RESERVED.
+</div>
+
+<div>
+DJ • PRODUCER • RECORDING ARTIST
+</div>
+
+</div>
+
+
+</div>
 
 </footer>
 
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const menuToggle =
+document.getElementById("menuToggle");
+
+const navigation =
+document.getElementById("navigation");
+
+
+menuToggle.addEventListener(
+    "click",
+    function() {
+
+        navigation.classList.toggle("show");
+
+    }
+);
+
+
+/* Close mobile menu after clicking link */
+
+document
+.querySelectorAll("nav a")
+.forEach(function(link) {
+
+    link.addEventListener(
+        "click",
+        function() {
+
+            navigation.classList.remove("show");
+
+        }
+    );
+
+});
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const revealElements =
+document.querySelectorAll(".reveal");
+
+
+const observer =
+new IntersectionObserver(
+
+function(entries) {
+
+    entries.forEach(function(entry) {
+
+        if(entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+        }
+
+    });
+
+},
+{
+    threshold: 0.12
+});
+
+
+revealElements.forEach(function(element) {
+
+    observer.observe(element);
+
+});
+
+
+/* =========================================================
+   AUDIO PLAYER
+========================================================= */
+
+const audio =
+document.getElementById("audioPlayer");
+
+const playButton =
+document.getElementById("playButton");
+
+
+playButton.addEventListener(
+    "click",
+    function() {
+
+        if(audio.paused) {
+
+            audio.play();
+
+            playButton.innerHTML = "❚❚";
+
+        } else {
+
+            audio.pause();
+
+            playButton.innerHTML = "▶";
+
+        }
+
+    }
+);
+
+
+audio.addEventListener(
+    "ended",
+    function() {
+
+        playButton.innerHTML = "▶";
+
+    }
+);
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+const sections =
+document.querySelectorAll("section[id]");
+
+const navLinks =
+document.querySelectorAll("nav a");
+
+
+window.addEventListener(
+    "scroll",
+    function() {
+
+        let current = "";
+
+        sections.forEach(function(section) {
+
+            const sectionTop =
+                section.offsetTop - 160;
+
+            if(
+                window.scrollY >= sectionTop
+            ) {
+
+                current =
+                    section.getAttribute("id");
+
+            }
+
+        });
+
+
+        navLinks.forEach(function(link) {
+
+            link.classList.remove("active");
+
+            if(
+                link.getAttribute("href")
+                === "#" + current
+            ) {
+
+                link.classList.add("active");
+
+            }
+
+        });
+
+    }
+);
+
+</script>
 
 </body>
 </html>
