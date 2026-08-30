@@ -14,6 +14,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -35,6 +36,7 @@
             text-decoration: none;
             color: inherit;
         }
+
 
         /* =========================
            HEADER
@@ -59,8 +61,6 @@
             align-items: center;
             justify-content: space-between;
         }
-
-        /* CLICKABLE LOGO */
 
         .logo img {
             width: 190px;
@@ -92,7 +92,10 @@
             padding-bottom: 5px;
         }
 
-        /* HEADER SOCIAL ICONS */
+
+        /* =========================
+           HEADER SOCIAL ICONS
+        ========================= */
 
         .header-social {
             display: flex;
@@ -123,7 +126,10 @@
             transform: translateY(-3px);
         }
 
-        /* MOBILE MENU */
+
+        /* =========================
+           MOBILE MENU
+        ========================= */
 
         .menu-toggle {
             display: none;
@@ -131,6 +137,7 @@
             font-size: 32px;
             cursor: pointer;
         }
+
 
         /* =========================
            HERO
@@ -219,6 +226,7 @@
             box-shadow: 0 8px 25px rgba(244,208,63,0.18);
         }
 
+
         /* =========================
            GENERAL SECTIONS
         ========================= */
@@ -256,6 +264,7 @@
             color: #aaa;
         }
 
+
         /* =========================
            ABOUT
         ========================= */
@@ -267,13 +276,19 @@
             align-items: center;
         }
 
-        .about-logo {
+        /* ABOUT PHOTO */
+
+        .about-image {
             text-align: center;
+            margin-bottom: 20px;
         }
 
-        .about-logo img {
-            width: 350px;
-            max-width: 90%;
+        .about-image img {
+            width: 320px;
+            max-width: 85%;
+            height: auto;
+            display: inline-block;
+            border-radius: 12px;
         }
 
         .about-text h3 {
@@ -292,6 +307,7 @@
             font-size: 20px;
             font-weight: bold;
         }
+
 
         /* =========================
            SERVICES
@@ -329,6 +345,7 @@
             color: #aaa;
             font-size: 15px;
         }
+
 
         /* =========================
            MUSIC
@@ -373,6 +390,7 @@
             color: #050607;
         }
 
+
         /* =========================
            GALLERY
         ========================= */
@@ -387,9 +405,11 @@
             height: 220px;
             background: linear-gradient(135deg, #171717, #292929);
             border: 1px solid rgba(212,175,55,0.25);
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             color: #777;
             overflow: hidden;
         }
@@ -404,6 +424,7 @@
         .gallery-item:hover img {
             transform: scale(1.05);
         }
+
 
         /* =========================
            EVENTS
@@ -425,12 +446,14 @@
             margin-bottom: 30px;
         }
 
+
         /* =========================
            BOOKING
         ========================= */
 
         .booking {
             text-align: center;
+
             background:
                 radial-gradient(
                     circle at center,
@@ -454,6 +477,7 @@
             margin: 0 auto 30px;
             color: #aaa;
         }
+
 
         /* =========================
            FOOTER
@@ -507,6 +531,7 @@
             padding-left: 5px;
         }
 
+
         /* =========================
            BIG SOCIAL ICONS
         ========================= */
@@ -542,12 +567,14 @@
             box-shadow: 0 8px 20px rgba(244,208,63,0.2);
         }
 
+
         /* TikTok */
 
         .social-icons .tiktok:hover {
             background: #ffffff;
             color: #050607;
         }
+
 
         /* Spotify */
 
@@ -556,12 +583,14 @@
             color: #ffffff;
         }
 
+
         /* Facebook */
 
         .social-icons .facebook:hover {
             background: #1877F2;
             color: #ffffff;
         }
+
 
         /* Instagram */
 
@@ -570,12 +599,14 @@
             color: #ffffff;
         }
 
+
         /* Apple */
 
         .social-icons .apple:hover {
             background: #ffffff;
             color: #050607;
         }
+
 
         .contact-info {
             color: #aaa;
@@ -606,8 +637,9 @@
             font-size: 12px;
         }
 
+
         /* =========================
-           MOBILE
+           TABLET / MOBILE
         ========================= */
 
         @media (max-width: 900px) {
@@ -657,7 +689,18 @@
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
+
+            /* About image on tablet */
+            .about-image img {
+                width: 280px;
+                max-width: 80%;
+            }
         }
+
+
+        /* =========================
+           SMALL MOBILE
+        ========================= */
 
         @media (max-width: 600px) {
 
@@ -669,6 +712,10 @@
                 padding: 0 20px;
             }
 
+            .logo img {
+                width: 140px;
+            }
+
             .hero h1 {
                 font-size: 43px;
             }
@@ -677,6 +724,51 @@
                 font-size: 16px;
             }
 
+            .section-title {
+                margin-bottom: 40px;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .section-title p {
+                font-size: 13px;
+            }
+
+
+            /* ABOUT PHOTO - MOBILE */
+
+            .about-image {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .about-image img {
+                width: 260px;
+                max-width: 80%;
+                height: auto;
+                display: inline-block;
+                border-radius: 12px;
+            }
+
+            .about-text h3 {
+                font-size: 26px;
+                margin-bottom: 15px;
+            }
+
+            .tagline {
+                font-size: 16px;
+            }
+
+            .about-text p {
+                font-size: 15px;
+            }
+
+
+            /* GALLERY */
+
             .gallery-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -684,6 +776,9 @@
             .gallery-item {
                 height: 150px;
             }
+
+
+            /* FOOTER */
 
             .footer-grid {
                 grid-template-columns: 1fr;
@@ -698,11 +793,22 @@
             .social-icons {
                 justify-content: flex-start;
             }
+
+
+            /* BOOKING BUTTONS */
+
+            .booking .btn {
+                margin: 5px !important;
+            }
+
         }
+
     </style>
 </head>
 
+
 <body>
+
 
 <!-- =========================
      HEADER
@@ -713,71 +819,116 @@
     <div class="header-inner">
 
         <!-- CLICK LOGO TO RETURN HOME -->
+
         <a href="#home" class="logo">
-            <img src="dj moe.png" alt="DJ Moe D Finest">
+
+            <img src="dj moe.png"
+                 alt="DJ Moe D Finest">
+
         </a>
 
+
         <nav>
+
             <a href="#home">Home</a>
+
             <a href="#about">About</a>
+
             <a href="#music">Music</a>
+
             <a href="#services">Services</a>
+
             <a href="#gallery">Gallery</a>
+
             <a href="#events">Events</a>
-            <a href="#booking" class="book-button">Book Now</a>
+
+            <a href="#booking"
+               class="book-button">
+                Book Now
+            </a>
+
+
+            <!-- HEADER SOCIAL ICONS -->
 
             <div class="header-social">
 
+
                 <!-- TikTok -->
+
                 <a href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
                    target="_blank"
                    rel="noopener noreferrer"
                    aria-label="TikTok">
+
                     <i class="fa-brands fa-tiktok"></i>
+
                 </a>
 
+
                 <!-- Facebook -->
+
                 <a href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
                    target="_blank"
                    rel="noopener noreferrer"
                    aria-label="Facebook">
+
                     <i class="fa-brands fa-facebook-f"></i>
+
                 </a>
 
+
                 <!-- Instagram -->
+
                 <a href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
                    target="_blank"
                    rel="noopener noreferrer"
                    aria-label="Instagram">
+
                     <i class="fa-brands fa-instagram"></i>
+
                 </a>
 
+
                 <!-- Spotify -->
+
                 <a href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
                    target="_blank"
                    rel="noopener noreferrer"
                    aria-label="Spotify">
+
                     <i class="fa-brands fa-spotify"></i>
+
                 </a>
 
+
                 <!-- Apple Music -->
+
                 <a href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
                    target="_blank"
                    rel="noopener noreferrer"
                    aria-label="Apple Music">
+
                     <i class="fa-brands fa-apple"></i>
+
                 </a>
 
             </div>
+
         </nav>
 
+
+        <!-- MOBILE MENU BUTTON -->
+
         <div class="menu-toggle">
+
             <i class="fa-solid fa-bars"></i>
+
         </div>
 
     </div>
 
 </header>
+
 
 
 <!-- =========================
@@ -789,36 +940,56 @@
     <div class="hero-content">
 
         <div class="hero-small">
+
             DJ • Producer • Recording Artist
+
         </div>
 
+
         <h1>
+
             Your Event.<br>
+
             <span>Your Soundtrack.</span>
+
         </h1>
 
+
         <p>
+
             Creating unforgettable soundtracks for weddings,
             private events, parties and special occasions.
             From the first song to the final track,
             every moment deserves the finest sound.
+
         </p>
+
 
         <div class="hero-buttons">
 
-            <a href="#booking" class="btn btn-gold">
+
+            <a href="#booking"
+               class="btn btn-gold">
+
                 Book DJ Moe D
+
             </a>
 
-            <a href="#music" class="btn">
+
+            <a href="#music"
+               class="btn">
+
                 Listen to Music
+
             </a>
+
 
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -829,30 +1000,52 @@
 
     <div class="container">
 
+
         <div class="section-title">
 
             <h2>About</h2>
 
             <div class="line"></div>
 
-            <p>Music is a conversation with the room.</p>
+            <p>
+                Music is a conversation with the room.
+            </p>
 
         </div>
 
+
         <div class="about-grid">
 
+
+            <!-- ABOUT PHOTO -->
+
             <div class="about-image">
-    <img src="about-photo.PNG" alt="DJ Moe D Finest">
-</div>
+
+                <img src="about-photo.PNG"
+                     alt="DJ Moe D Finest">
+
+            </div>
+
+
+            <!-- ABOUT TEXT -->
+
             <div class="about-text">
 
-                <h3>DJ Moe D Finest</h3>
+
+                <h3>
+                    DJ Moe D Finest
+                </h3>
+
 
                 <p class="tagline">
+
                     DJ • Producer • Recording Artist
+
                 </p>
 
+
                 <p>
+
                     DJ Moe D Finest brings energy, style and
                     musical experience to every event.
                     Whether it's an elegant wedding, a private
@@ -860,14 +1053,19 @@
                     nightlife experience, the goal is simple:
                     create the right atmosphere and unforgettable
                     memories.
+
                 </p>
 
+
                 <p>
+
                     Every crowd is different. Every celebration
                     has its own story. That's why every set is
                     carefully built around the people, the moment
                     and the energy in the room.
+
                 </p>
+
 
             </div>
 
@@ -876,6 +1074,7 @@
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -886,40 +1085,66 @@
 
     <div class="container">
 
+
         <div class="section-title">
 
             <h2>Music</h2>
 
             <div class="line"></div>
 
-            <p>Listen to DJ Moe D Finest</p>
+            <p>
+                Listen to DJ Moe D Finest
+            </p>
 
         </div>
 
+
         <div class="music-box">
 
-            <h3>Listen. Feel. Experience.</h3>
+
+            <h3>
+                Listen. Feel. Experience.
+            </h3>
+
 
             <p>
+
                 Discover music, mixes and releases from
                 DJ Moe D Finest.
+
             </p>
+
 
             <div class="music-links">
 
+
+                <!-- SPOTIFY -->
+
                 <a class="music-link"
                    href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     <i class="fa-brands fa-spotify"></i>
+
                     Spotify
+
                 </a>
+
+
+                <!-- APPLE MUSIC -->
 
                 <a class="music-link"
                    href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     <i class="fa-brands fa-apple"></i>
+
                     Apple Music
+
                 </a>
+
 
             </div>
 
@@ -928,6 +1153,7 @@
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -938,64 +1164,91 @@
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>What I Do</h2>
+            <h2>
+                What I Do
+            </h2>
 
             <div class="line"></div>
 
         </div>
 
+
         <div class="services-grid">
+
+
+            <!-- WEDDINGS -->
 
             <div class="service">
 
                 <i class="fa-solid fa-ring"></i>
 
-                <h3>Weddings</h3>
+                <h3>
+                    Weddings
+                </h3>
 
                 <p>
+
                     Elegant sound. Perfect timing.
                     Unforgettable memories. From the ceremony
                     and cocktail hour to the first dance,
                     every moment gets the right soundtrack.
+
                 </p>
 
             </div>
+
+
+            <!-- PRIVATE EVENTS -->
 
             <div class="service">
 
                 <i class="fa-solid fa-users"></i>
 
-                <h3>Private Events</h3>
+                <h3>
+                    Private Events
+                </h3>
 
                 <p>
+
                     Personalized music and energy built around
                     your celebration. Birthdays, anniversaries,
                     corporate events and special occasions.
+
                 </p>
 
             </div>
+
+
+            <!-- PARTIES -->
 
             <div class="service">
 
                 <i class="fa-solid fa-headphones"></i>
 
-                <h3>Parties & Nightlife</h3>
+                <h3>
+                    Parties & Nightlife
+                </h3>
 
                 <p>
+
                     From the first track to the final song,
                     keeping the room alive with powerful music,
                     smooth transitions and the right energy.
+
                 </p>
 
             </div>
+
 
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1006,17 +1259,24 @@
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Gallery</h2>
+            <h2>
+                Gallery
+            </h2>
 
             <div class="line"></div>
 
-            <p>Moments behind the music</p>
+            <p>
+                Moments behind the music
+            </p>
 
         </div>
 
+
         <div class="gallery-grid">
+
 
             <!--
             Replace these boxes with your own images.
@@ -1024,31 +1284,46 @@
             Example:
 
             <div class="gallery-item">
-                <img src="gallery1.jpg" alt="DJ Moe D Finest performing">
+                <img src="gallery1.jpg"
+                     alt="DJ Moe D Finest performing">
             </div>
             -->
 
+
             <div class="gallery-item">
+
                 <i class="fa-solid fa-music"></i>
+
             </div>
 
+
             <div class="gallery-item">
+
                 <i class="fa-solid fa-compact-disc"></i>
+
             </div>
 
+
             <div class="gallery-item">
+
                 <i class="fa-solid fa-users"></i>
+
             </div>
 
+
             <div class="gallery-item">
+
                 <i class="fa-solid fa-headphones"></i>
+
             </div>
+
 
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1059,73 +1334,109 @@
 
     <div class="container">
 
+
         <div class="section-title">
 
-            <h2>Events</h2>
+            <h2>
+                Events
+            </h2>
 
             <div class="line"></div>
 
         </div>
 
+
         <div class="events-box">
 
-            <h3>Made for Your Moment</h3>
+
+            <h3>
+                Made for Your Moment
+            </h3>
+
 
             <p>
+
                 Weddings, birthdays, private celebrations,
                 corporate events, parties and nightlife.
                 DJ Moe D Finest brings professional sound,
                 musical versatility and the energy your event
                 deserves.
+
             </p>
 
-            <a href="#booking" class="btn btn-gold">
+
+            <a href="#booking"
+               class="btn btn-gold">
+
                 Book Now
+
             </a>
+
 
         </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
      BOOKING
 ========================= -->
 
-<section class="booking" id="booking">
+<section class="booking"
+         id="booking">
 
     <div class="container">
 
+
         <h2>
+
             Let's Make Your Next Event
-            <span>Unforgettable.</span>
+
+            <span>
+                Unforgettable.
+            </span>
+
         </h2>
 
+
         <p>
+
             Planning a wedding, private celebration,
             corporate event, party or nightlife experience?
             Connect with DJ Moe D Finest and let's create
             the perfect soundtrack for your event.
+
         </p>
 
+
         <!-- EMAIL -->
+
         <a href="mailto:djmoe20@yahoo.com"
            class="btn btn-gold">
+
             Request a Booking
+
         </a>
 
+
         <!-- PHONE -->
+
         <a href="tel:+4917661209239"
            class="btn"
            style="margin-left:10px;">
+
             Call Now
+
         </a>
+
 
     </div>
 
 </section>
+
 
 
 <!-- =========================
@@ -1134,15 +1445,20 @@
 
 <footer>
 
+
     <div class="footer-grid">
+
 
         <!-- BRAND -->
 
         <div class="footer-column">
 
+
             <div class="footer-logo">
 
+
                 <!-- CLICKABLE FOOTER LOGO -->
+
                 <a href="#home">
 
                     <img src="dj moe.png"
@@ -1150,19 +1466,26 @@
 
                 </a>
 
+
             </div>
 
+
             <p>
+
                 DJ • Producer • Recording Artist creating
                 unforgettable soundtracks for weddings,
                 private events, parties and special occasions.
+
             </p>
+
 
             <!-- SOCIAL MEDIA ICONS -->
 
             <div class="social-icons">
 
-                <!-- TikTok -->
+
+                <!-- TIKTOK -->
+
                 <a class="tiktok"
                    href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
                    target="_blank"
@@ -1173,7 +1496,9 @@
 
                 </a>
 
-                <!-- Facebook -->
+
+                <!-- FACEBOOK -->
+
                 <a class="facebook"
                    href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
                    target="_blank"
@@ -1184,7 +1509,9 @@
 
                 </a>
 
-                <!-- Instagram -->
+
+                <!-- INSTAGRAM -->
+
                 <a class="instagram"
                    href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
                    target="_blank"
@@ -1195,7 +1522,9 @@
 
                 </a>
 
-                <!-- Spotify -->
+
+                <!-- SPOTIFY -->
+
                 <a class="spotify"
                    href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
                    target="_blank"
@@ -1206,7 +1535,9 @@
 
                 </a>
 
-                <!-- Apple Music -->
+
+                <!-- APPLE MUSIC -->
+
                 <a class="apple"
                    href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
                    target="_blank"
@@ -1217,25 +1548,37 @@
 
                 </a>
 
+
             </div>
 
         </div>
+
 
 
         <!-- QUICK LINKS -->
 
         <div class="footer-column">
 
-            <h3>Quick Links</h3>
+
+            <h3>
+                Quick Links
+            </h3>
+
 
             <div class="footer-links">
 
                 <a href="#home">Home</a>
+
                 <a href="#about">About</a>
+
                 <a href="#music">Music</a>
+
                 <a href="#services">Services</a>
+
                 <a href="#gallery">Gallery</a>
+
                 <a href="#events">Events</a>
+
                 <a href="#booking">Book Now</a>
 
             </div>
@@ -1243,89 +1586,147 @@
         </div>
 
 
+
         <!-- FOLLOW -->
 
         <div class="footer-column">
 
-            <h3>Follow Me</h3>
+
+            <h3>
+                Follow Me
+            </h3>
+
 
             <div class="footer-links">
 
+
                 <a href="https://www.tiktok.com/@djmoedfinest?_r=1&_t=ZG-99JDo3g7ed7"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     TikTok
+
                 </a>
+
 
                 <a href="https://www.facebook.com/share/19kagyoXPD/?mibextid=wwXIfr"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     Facebook
+
                 </a>
+
 
                 <a href="https://www.instagram.com/djmoedfinst?igsi=eTJpYXliM3RpNDV5&utm_source=qr"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     Instagram
+
                 </a>
+
 
                 <a href="https://open.spotify.com/artist/47E0dD3phDfVAbgxiB734U?si=iCTlCkcdQvq1XfbKxHL_nw&utm_source=copy-link"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     Spotify
+
                 </a>
 
+
                 <a href="https://music.apple.com/de/artist/dj-moe-d-finest/1801768747?l=en-GB"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     Apple Music
+
                 </a>
+
 
             </div>
 
         </div>
+
 
 
         <!-- CONTACT -->
 
         <div class="footer-column">
 
-            <h3>Book DJ Moe D</h3>
+
+            <h3>
+                Book DJ Moe D
+            </h3>
+
 
             <div class="contact-info">
 
+
                 <a href="mailto:djmoe20@yahoo.com">
+
                     <i class="fa-solid fa-envelope"></i>
+
                     &nbsp; djmoe20@yahoo.com
+
                 </a>
 
+
                 <a href="tel:+4917661209239">
+
                     <i class="fa-solid fa-phone"></i>
+
                     &nbsp; +49 176 61209239
+
                 </a>
+
 
             </div>
 
+
             <br>
+
 
             <a href="mailto:djmoe20@yahoo.com"
                class="btn btn-gold">
+
                 Get In Touch
+
             </a>
+
 
         </div>
 
+
     </div>
 
+
+
+    <!-- COPYRIGHT -->
 
     <div class="copyright">
 
-        <div>
-            © 2026 DJ Moe D Finest. All Rights Reserved.
-        </div>
 
         <div>
-            DJ • Producer • Recording Artist
+
+            © 2026 DJ Moe D Finest. All Rights Reserved.
+
         </div>
+
+
+        <div>
+
+            DJ • Producer • Recording Artist
+
+        </div>
+
 
     </div>
 
+
 </footer>
+
 
 
 <!-- =========================
@@ -1334,35 +1735,50 @@
 
 <script>
 
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
+    const menuToggle =
+        document.querySelector('.menu-toggle');
+
+    const nav =
+        document.querySelector('nav');
+
 
     menuToggle.addEventListener('click', function () {
 
+
         if (nav.style.display === 'flex') {
+
 
             nav.style.display = 'none';
 
+
         } else {
+
 
             nav.style.display = 'flex';
 
             nav.style.position = 'absolute';
+
             nav.style.top = '90px';
+
             nav.style.left = '0';
+
             nav.style.right = '0';
+
             nav.style.background = '#090a08';
 
             nav.style.padding = '25px';
 
             nav.style.flexDirection = 'column';
+
             nav.style.alignItems = 'center';
+
 
         }
 
     });
 
 </script>
+
 
 </body>
 </html>
